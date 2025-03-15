@@ -1,9 +1,12 @@
 "use client";
 
 import React, { useState } from "react";
+import { Monoton } from "next/font/google";
 
 // Definir o tipo para os idiomas
 type LanguageType = "EN" | "PT";
+
+const monoton = Monoton({ subsets: ["latin"], weight: "400" });
 
 const GameGalo = ({ onWin, onSkip, language }: { onWin: () => void; onSkip: () => void; language: LanguageType }) => {
   const [board, setBoard] = useState(Array(9).fill(null));
@@ -14,14 +17,14 @@ const GameGalo = ({ onWin, onSkip, language }: { onWin: () => void; onSkip: () =
   // Texto traduzido
   const text: Record<LanguageType, { title: string; description: string; smallText: string }> = {
     EN: {
-      title: "Welcome to this journey! 🚀",
+      title: "Welcome to this journey! ✈︎",
       description: "Find out what awaits you... But there's a challenge: you must win the tic-tac-toe game!",
-      smallText: "Otherwise, you'll never uncover the hidden secret!",
+      smallText: "Otherwise, you'll never uncover the hidden secret of ...",
     },
     PT: {
-      title: "Bem-vindo a esta jornada! 🚀",
-      description: "Descobre o que te espera... Mas há um desafio: tens de vencer o jogo do galo!",
-      smallText: "Caso contrário, nunca saberás o segredo escondido!",
+      title: "Bem-vindo a esta jornada! ✈︎",
+      description: "Descobre o que te espera... Mas há um desafio: tens de vencer o jogo da velha!",
+      smallText: "Caso contrário, nunca saberás o segredo escondido da ...!",
     },
   };
 
@@ -54,7 +57,7 @@ const GameGalo = ({ onWin, onSkip, language }: { onWin: () => void; onSkip: () =
     if (winner) {
       setGameOver(true);
       setTimeout(() => {
-        alert(`🎉 ${winner} venceu!`);
+        alert(`🎉 ${winner} won!`);
         onWin();
       }, 500);
     }
@@ -74,7 +77,7 @@ const GameGalo = ({ onWin, onSkip, language }: { onWin: () => void; onSkip: () =
     if (winner) {
       setGameOver(true);
       setTimeout(() => {
-        alert(`🎉 ${winner} venceu!`);
+        alert(`🎉 ${winner} won!`);
         onWin();
       }, 500);
       return;
@@ -102,8 +105,8 @@ const GameGalo = ({ onWin, onSkip, language }: { onWin: () => void; onSkip: () =
             className="w-24 h-24 flex items-center justify-center bg-gray-700 hover:bg-gray-600 transition-all duration-200 shadow-lg rounded-lg"
             onClick={() => handleClick(index)}
           >
-            {cell === "X" && <span className="text-5xl font-bold text-blue-400 animate-pulse">X</span>}
-            {cell === "O" && <span className="text-5xl font-bold text-red-400 animate-bounce">O</span>}
+            {cell === "X" && <span className={`text-6xl text-blue-500 ${monoton.className} animate-pulse`}>X</span>}
+            {cell === "O" && <span className={`text-6xl text-red-500 ${monoton.className} animate-bounce`}>O</span>}
           </button>
         ))}
       </div>
