@@ -1,14 +1,28 @@
 "use client";
 
+import HeaderOptions from "@/components/HeaderOptions";
+import { useLanguage } from "@/components/LanguageContext";
 import React from "react";
 
-const Contact = () => {
-    return (
-      <div className="container mx-auto py-10 text-center">
-        <h1 className="text-3xl font-bold">Contato</h1>
-        <p className="mt-4 text-lg">Aqui ficará o formulário de contato e redes sociais.</p>
-      </div>
-    );
-  };
-  
-  export default Contact;
+export default function Contact() {
+  const { language } = useLanguage();
+
+  return (
+    <div
+      className="min-h-screen flex flex-col items-center justify-center bg-cover bg-center"
+      style={{
+        backgroundImage: "url('/images/background.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <HeaderOptions />
+
+      {/* Título da página */}
+      <h1 className="text-5xl font-bold mb-12 text-gray-900">
+        {language === "EN" ? "Contacts" : "Contatos"}
+      </h1>
+    </div>
+  );
+}

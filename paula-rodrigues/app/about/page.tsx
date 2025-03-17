@@ -2,7 +2,6 @@
 
 import HeaderOptions from "@/components/HeaderOptions";
 import { useLanguage } from "@/components/LanguageContext";
-import Timeline from "@/components/timeline";
 
 export default function About() {
   const { language } = useLanguage(); // Obtém o idioma global
@@ -17,16 +16,12 @@ export default function About() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Opções de idioma e tema */}
       <HeaderOptions />
 
       {/* Título da página */}
       <h1 className="text-5xl font-bold mb-12 text-gray-900">
-        {language === "EN" ? "About Me" : "Sobre Mim"}
+        {language === "EN" ? "Who I am?" : "Sobre Mim"}
       </h1>
-
-      {/* Timeline */}
-      <Timeline language={language} />
     </div>
   );
 }

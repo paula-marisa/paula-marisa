@@ -4,7 +4,7 @@
 import GameGalo from "@/components/GameGalo";
 import HeaderOptions from "@/components/HeaderOptions";
 import { useLanguage } from "@/components/LanguageContext";
-import Timeline from "@/components/timeline";
+import Menu from "@/components/Menu";
 import React, { useState } from "react";
 
 export default function Home() {
@@ -26,18 +26,7 @@ export default function Home() {
             backgroundRepeat: "no-repeat",
           }}
         >
-          {/* Sobreposição azul transparente sobre a imagem */}
-          <div
-            className="absolute top-36 left-0 w-full h-[300px]"
-            style={{ backgroundColor: "rgba(255, 255, 255, 1)" }} // Azul #51A0B7 com 50% de opacidade
-          ></div>
-          {/* Imagem do timeline agora abaixo da sobreposição */}
-          <img
-            src="/images/timeline.png"
-            alt="Timeline"
-            className="w-full max-w-[1000px] h-auto object-contain relative z-10"
-          />
-          <Timeline />
+          <Menu />
         </div>
       )}
     </div>

@@ -1,15 +1,28 @@
 "use client";
 
+import HeaderOptions from "@/components/HeaderOptions";
+import { useLanguage } from "@/components/LanguageContext";
 import React from "react";
 
-const Experience = () => {
-    return (
-      <div className="container mx-auto py-10 text-center">
-        <h1 className="text-3xl font-bold">Experiência</h1>
-        <p className="mt-4 text-lg">Aqui será exibida minha experiência profissional.</p>
-      </div>
-    );
-  };
-  
-  export default Experience;
-  
+export default function Experience() {
+  const { language } = useLanguage();
+
+  return (
+    <div
+      className="min-h-screen flex flex-col items-center justify-center bg-cover bg-center"
+      style={{
+        backgroundImage: "url('/images/background.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <HeaderOptions />
+
+      {/* Título da página */}
+      <h1 className="text-5xl font-bold mb-12 text-gray-900">
+        {language === "EN" ? "Experience" : "Experiência"}
+      </h1>
+    </div>
+  );
+}
