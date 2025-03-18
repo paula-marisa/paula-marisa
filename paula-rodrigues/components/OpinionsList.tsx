@@ -8,8 +8,11 @@ const alegreya = Alegreya({ subsets: ["latin"], weight: "700" });
 
 type Opinion = {
     id: string;
-    name: string;
+    firstName: string;
+    lastName: string;
     work: boolean;
+    workLocation?: string;
+    knowLocation?: string;
     comment: string;
     rating: number;
     date: string;
@@ -66,13 +69,25 @@ const OpinionsList = () => {
                 </p>
             ) : (
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {opinions.map(({ id, name, work, comment, rating, date }) => (
+                    {opinions.map(({ id, firstName, lastName, work, workLocation, knowLocation, comment, rating, date }) => (
                         <div key={id} className="bg-white p-6 rounded-lg shadow-lg">
-                            <p className="font-bold text-lg text-gray-900">{name}</p>
+                            <p className="font-bold text-lg text-gray-900">
+                                {firstName} {lastName}
+                            </p>
                             <p className="text-sm text-gray-500">
                                 📅 {date ? new Date(date).toLocaleDateString() : "Data indisponível"}
                             </p>
-                            {work && <p className="text-green-600 font-semibold">✅ Trabalhou comigo</p>}
+
+                            {work ? (
+                                <p className="text-green-600 font-semibold">
+                                    ✅ {language === "EN" ? "Worked with me at" : "Trabalhou comigo em"}: {workLocation}
+                                </p>
+                            ) : (
+                                <p className="text-blue-600 font-semibold">
+                                    📍 {language === "EN" ? "Met me at" : "Conheceu-me em"}: {knowLocation}
+                                </p>
+                            )}
+
                             <p className="text-gray-700 mt-2">{comment}</p>
                             <StarRating rating={rating} />
                         </div>

@@ -1,53 +1,94 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useLanguage } from "@/components/LanguageContext";
 
 const OpinionForm = () => {
     const { language } = useLanguage();
-    const [name, setName] = useState("");
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
+    const [email, setEmail] = useState("");
     const [comment, setComment] = useState("");
     const [rating, setRating] = useState(5);
     const [work, setWork] = useState(false);
-    const [message, setMessage] = useState("");
+    const [workLocation, setWorkLocation] = useState("");
+    const [knowLocation, setKnowLocation] = useState("");
+    const [showPopup, setShowPopup] = useState(false);
+    const [popupMessage, setPopupMessage] = useState("");
 
     // Textos traduzidos
     const text = {
         EN: {
             title: "Leave your opinion",
-            namePlaceholder: "Your name...",
+            firstNamePlaceholder: "First name...",
+            lastNamePlaceholder: "Last name...",
+            emailPlaceholder: "Your email...",
             commentPlaceholder: "Write here...",
             workedWithMe: "Worked with me?",
+            whereWorked: "Where did you work with me?",
+            whereMet: "Where did you meet me?",
             submit: "Submit Opinion",
             success: "Your opinion has been sent for approval!",
             rating: "Your rating:",
+            close: "Close",
         },
         PT: {
             title: "Deixa a tua opinião",
-            namePlaceholder: "O teu nome...",
+            firstNamePlaceholder: "Primeiro nome...",
+            lastNamePlaceholder: "Último nome...",
+            emailPlaceholder: "O teu email...",
             commentPlaceholder: "Escreve aqui...",
             workedWithMe: "Trabalhaste comigo?",
+            whereWorked: "Onde trabalhaste comigo?",
+            whereMet: "Onde me conheceste?",
             submit: "Enviar Opinião",
             success: "A tua opinião foi enviada para aprovação!",
             rating: "A tua avaliação:",
+            close: "Fechar",
         },
     };
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
-        const response = await fetch("/api/opinions", {
+        const response = await fetch(`/api/opinions?lang=${language}`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ name, comment, rating, work }),
+            body: JSON.stringify({
+                firstName,
+                lastName,
+                email,
+                comment,
+                rating,
+                work,
+                workLocation: work ? workLocation : "",
+                knowLocation: !work ? knowLocation : "",
+            }),
         });
 
         const data = await response.json();
-        setMessage(text[language].success); // Exibe a mensagem conforme o idioma
-        setName("");
-        setComment("");
-        setRating(5);
-        setWork(false);
+
+        if (response.ok) {
+            setPopupMessage(text[language].success);
+            setShowPopup(true);
+            setFirstName("");
+            setLastName("");
+            setEmail("");
+            setComment("");
+            setRating(5);
+            setWork(false);
+            setWorkLocation("");
+            setKnowLocation("");
+
+            // Fechar pop-up automaticamente após 3 segundos
+            setTimeout(() => setShowPopup(false), 3000);
+        } else {
+            setPopupMessage(data.error);
+            setShowPopup(true);
+
+            // Fechar pop-up automaticamente após 3 segundos
+            setTimeout(() => setShowPopup(false), 3000);
+        }
     };
 
     // Componente de Estrelas Interativas
@@ -75,10 +116,26 @@ const OpinionForm = () => {
             <form onSubmit={handleSubmit} className="mt-4 space-y-4">
                 <input
                     type="text"
-                    placeholder={text[language].namePlaceholder}
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    className="w-2xl p-2 border border-gray-300 rounded-lg"
+                    placeholder={text[language].firstNamePlaceholder}
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
+                    className="w-full p-2 border border-gray-300 rounded-lg"
+                    required
+                />
+                <input
+                    type="text"
+                    placeholder={text[language].lastNamePlaceholder}
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
+                    className="w-full p-2 border border-gray-300 rounded-lg"
+                    required
+                />
+                <input
+                    type="email"
+                    placeholder={text[language].emailPlaceholder}
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full p-2 border border-gray-300 rounded-lg"
                     required
                 />
                 <textarea
@@ -98,6 +155,27 @@ const OpinionForm = () => {
                     <label className="text-black dark:text-white">{text[language].workedWithMe}</label>
                 </div>
 
+                {/* Exibir campo correto com base na resposta */}
+                {work ? (
+                    <input
+                        type="text"
+                        placeholder={text[language].whereWorked}
+                        value={workLocation}
+                        onChange={(e) => setWorkLocation(e.target.value)}
+                        className="w-full p-2 border border-gray-300 rounded-lg"
+                        required
+                    />
+                ) : (
+                    <input
+                        type="text"
+                        placeholder={text[language].whereMet}
+                        value={knowLocation}
+                        onChange={(e) => setKnowLocation(e.target.value)}
+                        className="w-full p-2 border border-gray-300 rounded-lg"
+                        required
+                    />
+                )}
+
                 {/* Seção de Avaliação por Estrelas */}
                 <div>
                     <p className="text-black dark:text-white">{text[language].rating}</p>
@@ -107,8 +185,22 @@ const OpinionForm = () => {
                 <button type="submit" className="w-full bg-blue-600 text-white py-2 rounded-lg">
                     {text[language].submit}
                 </button>
-                {message && <p className="text-black dark:text-white mt-2">{message}</p>}
             </form>
+
+            {/* Pop-up informativo centralizado com animação */}
+            {showPopup && (
+                <div className="fixed inset-0 flex items-center justify-center bg-black/30">
+                    <div className="bg-white dark:bg-gray-800 text-black dark:text-white p-6 rounded-lg shadow-lg text-center animate-fade-in-out">
+                        <p className="text-lg font-semibold">{popupMessage}</p>
+                        <button
+                            onClick={() => setShowPopup(false)}
+                            className="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg"
+                        >
+                            {text[language].close}
+                        </button>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };
