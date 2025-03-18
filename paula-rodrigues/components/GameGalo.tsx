@@ -160,25 +160,29 @@ const GameGalo = ({ onWin, onSkip, language }: { onWin: () => void; onSkip: () =
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Banner de vitória/derrota/empate sobre o jogo */}
+
       {/* Mensagem de vitória, derrota ou empate */}
       {winner && (
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
-      bg-white text-black border-15 border-blue-800 rounded-xl shadow-2xl 
-      px-16 py-12 max-w-sm md:max-w-lg lg:max-w-xl flex flex-col items-center justify-center text-xl font-semibold text-justify">
-
-          {/* Mensagem de vitória com destaque para "Paula Rodrigues" */}
-          {winner === "win" ? (
-            <p className="leading-relaxed">
-              {text[language].win.split("Paula Rodrigues")[0]}
-              <span className={`text-blue-600 font-extrabold text-2xl ${alegreya.className}`}> Paula Rodrigues </span>
-              {text[language].win.split("Paula Rodrigues")[1]}
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+          <div className="bg-white dark:bg-gray-900 text-black dark:text-white p-6 rounded-lg shadow-lg border border-gray-300 dark:border-gray-700 w-[90%] max-w-md text-center">
+            <p className="text-lg">
+              {winner === "win" ? (
+                <>
+                  {text[language].win.split("Paula Rodrigues")[0]}
+                  <span className="text-blue-500 font-bold"> Paula Rodrigues </span>
+                  {text[language].win.split("Paula Rodrigues")[1]}
+                </>
+              ) : (
+                text[language][winner as "lose" | "draw"]
+              )}
             </p>
-          ) : (
-            <p className="leading-relaxed">
-              {text[language][winner as "lose" | "draw"]}
-            </p>
-          )}
+            <button
+              onClick={() => setWinner(null)}
+              className="mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+            >
+              OK
+            </button>
+          </div>
         </div>
       )}
 

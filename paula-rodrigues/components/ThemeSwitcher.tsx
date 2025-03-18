@@ -18,7 +18,7 @@ export default function ThemeSwitcher() {
             onClick={() => setTheme(theme === "light" ? "dark" : "light")}
             className="px-4 py-2 bg-gray-800 text-white rounded-md"
         >
-            {theme === "light" ? "🌙 Dark Mode" : "☀️ Light Mode"}
+            {theme === "light" ? "⏾ Dark Mode" : "☀️ Light Mode"}
         </button>
     );
 }
