@@ -4,6 +4,9 @@ import React, { useState, useEffect } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { TiThSmallOutline } from "react-icons/ti";
 import { useLanguage } from "./LanguageContext";
+import { useTheme } from "next-themes";
+import { MoonStars, SunDim } from "phosphor-react";
+import { MoonIcon, SunIcon } from "@heroicons/react/16/solid";
 
 // Definir o tipo correto para linguagem
 type LanguageType = "EN" | "PT";
@@ -15,13 +18,15 @@ interface HeaderOptionsProps {
 const HeaderOptions: React.FC = () => {
   const { language, setLanguage } = useLanguage();
   const [darkMode, setDarkMode] = useState(false);
+  const { theme, setTheme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-  // Alternar entre claro e escuro
-  const toggleTheme = () => {
-    setDarkMode((prev) => !prev);
-    document.documentElement.classList.toggle("dark");
-  };
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null; // Evita erros de renderização SSR
 
   // Alternar idioma e atualizar o estado global
   const toggleLanguage = () => {
@@ -33,10 +38,10 @@ const HeaderOptions: React.FC = () => {
     <div className="absolute top-4 right-4 flex items-center space-x-4 text-gray-700 dark:text-white">
       {/* Alternar tema */}
       <button
-        onClick={toggleTheme}
+        onClick={() => setTheme(theme === "light" ? "dark" : "light")}
         className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition"
       >
-        {darkMode ? <FaSun size={18} /> : <FaMoon size={18} />}
+        {theme === "light" ? "⏾" : "☀︎"}
       </button>
 
       {/* Alternar idioma */}
@@ -57,14 +62,16 @@ const HeaderOptions: React.FC = () => {
 
       {/* Menu Dropdown */}
       {menuOpen && (
-        <div className="absolute top-12 left-0 bg-white dark:bg-gray-800 shadow-lg rounded-lg w-48 p-4">
+        <div className="absolute top-12 right-0 bg-white dark:bg-gray-800 shadow-lg rounded-lg w-48 p-4">
           <ul className="text-gray-700 dark:text-white">
-            <li className="py-2 hover:text-blue-500"><a onClick={() => window.location.reload()}>Início</a></li>
-            <li className="py-2 hover:text-blue-500"><a href="/about">Sobre Mim</a></li>
-            <li className="py-2 hover:text-blue-500"><a href="/skills">Skills</a></li>
-            <li className="py-2 hover:text-blue-500"><a href="/experience">Experiência</a></li>
-            <li className="py-2 hover:text-blue-500"><a href="/projects">Projetos</a></li>
-            <li className="py-2 hover:text-blue-500"><a href="/contact">Contato</a></li>
+            <li className="py-2 hover:text-blue-500"><a href="/"> {language === "EN" ? "Game" : "Jogo"}</a></li>
+            <li className="py-2 hover:text-blue-500"><a href="/menu"> {language === "EN" ? "Home" : "Início"}</a></li>
+            <li className="py-2 hover:text-blue-500"><a href="/about"> {language === "EN" ? "About Me" : "Sobre Mim"}</a></li>
+            <li className="py-2 hover:text-blue-500"><a href="/skills"> {language === "EN" ? "Skills" : "Habilidades"}</a></li>
+            <li className="py-2 hover:text-blue-500"><a href="/experience"> {language === "EN" ? "Experience" : "Experiência"}</a></li>
+            <li className="py-2 hover:text-blue-500"><a href="/projects"> {language === "EN" ? "Projects" : "Projetos"}</a></li>
+            <li className="py-2 hover:text-blue-500"><a href="/opinions"> {language === "EN" ? "Opinions" : "Opiniões"}</a></li>
+            <li className="py-2 hover:text-blue-500"><a href="/contact"> {language === "EN" ? "Contact" : "Contato"}</a></li>
           </ul>
         </div>
       )}

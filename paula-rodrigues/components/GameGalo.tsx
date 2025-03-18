@@ -152,7 +152,7 @@ const GameGalo = ({ onWin, onSkip, language }: { onWin: () => void; onSkip: () =
 
   return (
     <div
-      className="w-screen h-screen flex flex-col items-center justify-center"
+      className="w-screen h-auto min-h-screen flex flex-col items-center justify-center px-4"
       style={{
         backgroundImage: "url('/images/capa.jpg')",
         backgroundSize: "cover",
@@ -165,7 +165,7 @@ const GameGalo = ({ onWin, onSkip, language }: { onWin: () => void; onSkip: () =
       {winner && (
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
       bg-white text-black border-15 border-blue-800 rounded-xl shadow-2xl 
-      px-16 py-12 w-[600px] h-[100px] flex flex-col items-center justify-center text-xl font-semibold text-justify">
+      px-16 py-12 max-w-sm md:max-w-lg lg:max-w-xl flex flex-col items-center justify-center text-xl font-semibold text-justify">
 
           {/* Mensagem de vitória com destaque para "Paula Rodrigues" */}
           {winner === "win" ? (
@@ -183,16 +183,16 @@ const GameGalo = ({ onWin, onSkip, language }: { onWin: () => void; onSkip: () =
       )}
 
       {/* Texto inicial */}
-      <h1 className={`text-7xl font-extrabold mb-4 text-yellow-500 ${alegreya.className}`}>
+      <h1 className={`text-lg sm:text-3xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-yellow-500 text-center px-4 ${alegreya.className}`}>
         {text[language].title}
       </h1>
-      <p className={`text-2xl mb-2 text-white ${alegreya.className}`}>
+      <p className={`text-lg sm:text-xl md:text-2xl mb-2 text-white ${alegreya.className}`}>
         {text[language].description}
       </p>
       <p className="text-sm text-gray-400">{text[language].smallText}</p>
 
       {/* Tabuleiro */}
-      <div className="grid grid-cols-3 gap-4 border-4 border-white p-4 mt-6">
+      <div className="grid grid-cols-3 gap-2 sm:gap-4 border-4 border-white p-2 sm:p-4 mt-6 max-w-xs sm:max-w-md">
         {board.map((cell, index) => (
           <button
             key={index}
@@ -200,7 +200,7 @@ const GameGalo = ({ onWin, onSkip, language }: { onWin: () => void; onSkip: () =
             onClick={() => handleClick(index)}
           >
             {cell && (
-              <span className={`text-6xl ${cell === "X" ? "text-blue-500" : "text-red-500"} ${monoton.className}`}>
+              <span className={`text-4xl sm:text-5xl md:text-6xl ${cell === "X" ? "text-blue-500" : "text-red-500"} ${monoton.className}`}>
                 {cell}
               </span>
             )}
@@ -208,8 +208,7 @@ const GameGalo = ({ onWin, onSkip, language }: { onWin: () => void; onSkip: () =
         ))}
       </div>
       {/* Opção para pular o jogo */}
-      <p className="text-sm text-gray-400 mt-4">
-        {language === "EN" ? "If you don't want to play, " : "Caso não queira jogar, "}
+      <p className="text-xs sm:text-sm md:text-base text-gray-400 mt-4">        {language === "EN" ? "If you don't want to play, " : "Caso não queira jogar, "}
         <span
           className="text-blue-400 cursor-pointer hover:underline"
           onClick={onSkip}

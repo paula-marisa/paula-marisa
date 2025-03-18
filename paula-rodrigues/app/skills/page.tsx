@@ -2,14 +2,24 @@
 
 import React from "react";
 import { useLanguage } from "@/components/LanguageContext";
-import HeaderOptions from "@/components/HeaderOptions";
-import { FaHtml5, FaCss3Alt, FaSass, FaJs, FaReact, FaNodeJs, FaGit, FaGithub, FaJava, FaTerminal } from "react-icons/fa";
-import { SiTypescript, SiTailwindcss, SiNextdotjs, SiFirebase, SiVercel, SiBootstrap, SiFigma, SiNpm, SiNetlify, SiCplusplus, SiAssemblyscript, SiMysql, SiR, SiAngular, SiThreedotjs, SiOracle, SiLinux, SiMongodb, SiOpenai, SiGrammarly, SiGraphql, SiCoder } from "react-icons/si";
-import { DiVisualstudio } from "react-icons/di";
 import { useRouter } from "next/navigation";
+import { useTheme } from "next-themes";
+import {
+  FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGit, FaGithub, FaJava,
+  FaTerminal,
+} from "react-icons/fa";
+import {
+  SiTypescript, SiTailwindcss, SiNextdotjs, SiFirebase, SiVercel, SiBootstrap, SiFigma,
+  SiNpm, SiNetlify, SiCplusplus, SiAssemblyscript, SiMysql, SiR, SiAngular,
+  SiThreedotjs, SiOracle, SiLinux, SiMongodb,
+} from "react-icons/si";
+import { DiVisualstudio } from "react-icons/di";
+import { Alegreya } from "next/font/google";
+
+const alegreya = Alegreya({ subsets: ["latin"], weight: "700" });
 
 // Definir o tipo exato das categorias
-type SkillCategory = "languages" | "frameworks" | "tools" | "databases" ;
+type SkillCategory = "languages" | "frameworks" | "databases" | "tools";
 
 // Textos traduzidos
 const text = {
@@ -44,7 +54,6 @@ const skills: Record<SkillCategory, { name: string; icon: React.ReactNode }[]> =
     { name: "Java", icon: <FaJava className="text-red-500 text-3xl" /> },
     { name: "Assembly", icon: <SiAssemblyscript className="text-gray-500 text-3xl" /> },
     { name: "R", icon: <SiR className="text-blue-400 text-3xl" /> },
-    { name: "SQL", icon: <SiMysql className="text-blue-500 text-3xl" /> },
   ],
   frameworks: [
     { name: "React", icon: <FaReact className="text-blue-400 text-3xl" /> },
@@ -56,6 +65,7 @@ const skills: Record<SkillCategory, { name: string; icon: React.ReactNode }[]> =
   ],
   databases: [
     { name: "Firebase Firestore", icon: <SiFirebase className="text-yellow-500 text-3xl" /> },
+    { name: "SQL", icon: <SiMysql className="text-blue-500 text-3xl" /> },
     { name: "MongoDB", icon: <SiMongodb className="text-green-600 text-3xl" /> },
     { name: "Oracle", icon: <SiOracle className="text-red-600 text-3xl" /> },
   ],
@@ -65,41 +75,41 @@ const skills: Record<SkillCategory, { name: string; icon: React.ReactNode }[]> =
     { name: "VS Code", icon: <DiVisualstudio className="text-blue-500 text-3xl" /> },
     { name: "npm", icon: <SiNpm className="text-red-500 text-3xl" /> },
     { name: "Vercel", icon: <SiVercel className="text-white text-3xl" /> },
-    { name: "Netlify", icon: <SiNetlify className="text-green-500 text-3xl" /> },
-    { name: "Bootstrap", icon: <SiBootstrap className="text-purple-500 text-3xl" /> },
-    { name: "Figma", icon: <SiFigma className="text-pink-500 text-3xl" /> },
     { name: "Linux Networking", icon: <SiLinux className="text-yellow-500 text-3xl" /> },
-    { name: "RStudio", icon: <SiR className="text-blue-400 text-3xl" /> },
   ],
 };
 
 export default function Skills() {
   const { language } = useLanguage();
   const router = useRouter();
+  const { theme } = useTheme();
+
+  const backgroundImage =
+    theme === "dark"
+      ? "url('/images/background_invert.png')"
+      : "url('/images/background.png')";
 
   return (
     <div
-      className="min-h-screen flex flex-col items-center justify-center bg-cover bg-center px-4"
+      className="min-h-screen flex flex-col items-center bg-cover bg-center px-4 py-10"
       style={{
-        backgroundImage: "url('/images/background.jpg')",
+        backgroundImage,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
     >
-      <HeaderOptions />
-
       {/* Título da página */}
-      <h1 className="text-5xl font-extrabold mb-8 text-[#1f536e]">
+      <h1 className={`text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 text-[#1f536e] text-center ${alegreya.className}`}>
         {text[language].title}
       </h1>
 
       {/* Grid de Skills */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-6xl">
         {(Object.keys(skills) as SkillCategory[]).map((key) => (
-          <div key={key} className="bg-gray-800 p-6 rounded-lg shadow-lg text-white">
-            <h2 className="text-2xl font-bold mb-4">{text[language].categories[key]}</h2>
-            <div className="space-y-2">
+          <div key={key} className="bg-gray-800 dark:bg-gray-700 p-6 rounded-lg shadow-lg text-white">
+            <h2 className="text-xl font-bold mb-4 text-center">{text[language].categories[key]}</h2>
+            <div className="space-y-3">
               {skills[key].map((skill, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   {skill.icon}
@@ -110,8 +120,9 @@ export default function Skills() {
           </div>
         ))}
       </div>
-      {/* Botão de Voltar ao Menu (Alinhado mais à direita, mas não no fim) */}
-      <div className="w-full flex justify-center md:justify-end pr-20">
+
+      {/* Botão de Voltar ao Menu */}
+      <div className="w-full flex justify-center md:justify-end pr-10 mt-6">
         <button
           onClick={() => router.push("/menu")}
           className="px-6 py-3 bg-[#1f536e] text-white font-bold rounded-lg shadow-lg hover:bg-[#00ACEA] transition"

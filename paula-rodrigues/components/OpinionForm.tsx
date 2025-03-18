@@ -70,8 +70,8 @@ const OpinionForm = () => {
     };
 
     return (
-        <div className="bg-white/80 dark:bg-black/70 p-10 rounded-xl shadow-2xl max-w-full border border-gray-300 dark:border-gray-600 text-justify">
-            <h2 className="text-2xl font-bold text-white">{text[language].title}</h2>
+        <div className="bg-white/80 dark:bg-transparent p-10 rounded-xl max-w-full text-justify">
+            <h2 className="text-2xl font-bold text-black dark:text-white">{text[language].title}</h2>
             <form onSubmit={handleSubmit} className="mt-4 space-y-4">
                 <input
                     type="text"
@@ -95,19 +95,19 @@ const OpinionForm = () => {
                         onChange={() => setWork(!work)}
                         className="w-5 h-5"
                     />
-                    <label className="text-white">{text[language].workedWithMe}</label>
+                    <label className="text-black dark:text-white">{text[language].workedWithMe}</label>
                 </div>
 
                 {/* Seção de Avaliação por Estrelas */}
                 <div>
-                    <p className="text-white">{text[language].rating}</p>
+                    <p className="text-black dark:text-white">{text[language].rating}</p>
                     <StarRating rating={rating} onSetRating={setRating} />
                 </div>
 
                 <button type="submit" className="w-full bg-blue-600 text-white py-2 rounded-lg">
                     {text[language].submit}
                 </button>
-                {message && <p className="text-white mt-2">{message}</p>}
+                {message && <p className="text-black dark:text-white mt-2">{message}</p>}
             </form>
         </div>
     );

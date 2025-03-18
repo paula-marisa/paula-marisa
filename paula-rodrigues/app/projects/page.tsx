@@ -3,12 +3,15 @@
 import React from "react";
 import Image from "next/image";
 import { useLanguage } from "@/components/LanguageContext";
-import HeaderOptions from "@/components/HeaderOptions";
 import { FaReact, FaCss3Alt, FaNodeJs, FaGithub } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss, SiFirebase } from "react-icons/si";
 import { useRouter } from "next/navigation";
+import { useTheme } from "next-themes";
+import { Alegreya } from "next/font/google";
 
-// 📌 Lista de projetos
+const alegreya = Alegreya({ subsets: ["latin"], weight: "700" });
+
+// Lista de projetos
 const projects = [
   {
     name: {
@@ -32,6 +35,12 @@ const projects = [
 export default function Projects() {
   const { language } = useLanguage();
   const router = useRouter();
+  const { theme } = useTheme();
+
+  const backgroundImage =
+    theme === "dark"
+      ? "url('/images/background_invert.png')"
+      : "url('/images/background.png')";
 
   // Textos traduzidos
   const text = {
@@ -55,49 +64,54 @@ export default function Projects() {
 
   return (
     <div
-      className="min-h-screen flex flex-col items-center justify-center bg-cover bg-center px-4"
+      className="min-h-screen flex flex-col items-center bg-cover bg-center px-4 md:px-12 py-10"
       style={{
-        backgroundImage: "url('/images/background.jpg')",
+        backgroundImage,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
     >
-      <HeaderOptions />
-
       {/* Título da página */}
-      <h1 className="text-5xl font-extrabold mb-8 text-[#1f536e] text-center">
+      <h1 className={`text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 text-[#1f536e] text-center ${alegreya.className}`}>
         {text[language].title}
       </h1>
 
       {/* Texto Explicativo */}
-      <div className="bg-white/80 dark:bg-black/70 p-6 rounded-xl shadow-xl max-w-3xl border border-gray-300 dark:border-gray-600 text-justify">
+      <div className="bg-white/80 dark:bg-black/70 p-6 md:p-8 rounded-xl shadow-xl max-w-3xl border border-gray-300 dark:border-gray-600 text-justify">
         <p className="text-lg text-gray-900 dark:text-gray-100 leading-relaxed">
           {text[language].description}
         </p>
       </div>
 
       {/* Lista de Projetos */}
-      <div className="container mx-auto py-10 flex flex-col items-center">
+      <div className="container mx-auto py-10 flex flex-col items-center space-y-8">
         {projects.map((project, index) => (
-          <div key={index} className="bg-gray-100 p-4 rounded-lg shadow-md max-w-md mx-auto">
+          <div
+            key={index}
+            className="bg-gray-100 dark:bg-gray-800 p-6 md:p-8 rounded-lg shadow-lg w-full max-w-2xl"
+          >
             {/* Imagem do Projeto */}
             <div className="flex justify-center">
               <Image
                 src={project.image}
-                width={400}
-                height={200}
+                width={500}
+                height={250}
                 alt={project.name[language]}
                 className="rounded-lg"
               />
             </div>
 
             {/* Nome do Projeto */}
-            <h2 className="mt-4 text-2xl font-bold text-[#1f536e]">{project.name[language]}</h2>
+            <h2 className="mt-4 text-2xl font-bold text-[#1f536e] text-center">
+              {project.name[language]}
+            </h2>
 
             {/* Tecnologias Utilizadas */}
-            <p className="text-gray-700 mt-2 font-semibold">{text[language].tech}</p>
-            <div className="flex justify-center gap-6 mt-2">
+            <p className="text-gray-700 dark:text-gray-300 mt-4 font-semibold text-center">
+              {text[language].tech}
+            </p>
+            <div className="flex flex-wrap justify-center gap-6 mt-2">
               {project.technologies.map((tech, i) => (
                 <div key={i} className="flex flex-col items-center">
                   {tech.icon}
@@ -107,29 +121,30 @@ export default function Projects() {
             </div>
 
             {/* Botões de Acesso */}
-            <div className="flex justify-center gap-4 mt-6">
+            <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
               <a
                 href={project.linkLive}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 bg-[#1f536e] text-white font-bold rounded-lg shadow-lg hover:bg-[#00ACEA] transition flex items-center gap-2"
+                className="px-6 py-3 bg-[#1f536e] text-white font-bold rounded-lg shadow-lg hover:bg-[#00ACEA] transition flex items-center gap-2 justify-center"
               >
-                🔗 {language === "EN" ? "Live Demo" : "Ver Projeto"}
+                🔗 {text[language].live}
               </a>
               <a
                 href={project.linkGitHub}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 bg-gray-800 text-white font-bold rounded-lg shadow-lg hover:bg-gray-600 transition flex items-center gap-2"
+                className="px-6 py-3 bg-gray-800 text-white font-bold rounded-lg shadow-lg hover:bg-gray-600 transition flex items-center gap-2 justify-center"
               >
-                💻 {language === "EN" ? "View Code" : "Ver Código"}
+                💻 {text[language].code}
               </a>
             </div>
           </div>
         ))}
       </div>
-      {/* Botão de Voltar ao Menu (Alinhado mais à direita, mas não no fim) */}
-      <div className="w-full flex justify-center md:justify-end pr-20">
+
+      {/* Botão de Voltar ao Menu */}
+      <div className="w-full flex justify-center md:justify-end pr-10 mt-6">
         <button
           onClick={() => router.push("/menu")}
           className="px-6 py-3 bg-[#1f536e] text-white font-bold rounded-lg shadow-lg hover:bg-[#00ACEA] transition"
