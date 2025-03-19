@@ -72,14 +72,23 @@ export default function Projects() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Título da página */}
-      <h1 className={`text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 text-[#1f536e] text-center ${alegreya.className}`}>
-        {text[language].title}
-      </h1>
+      {/* Caixa cobrindo título e descrição */}
+      <div
+        className={`p-6 md:p-8 rounded-xl shadow-2xl max-w-3xl w-full border transition-all ${theme === "dark"
+            ? "bg-white/90 text-gray-900 border-gray-300" // Fundo claro no modo escuro
+            : "bg-gray-900/90 text-white border-gray-600" // Fundo escuro no modo claro
+          }`}
+      >
+        {/* Título da página */}
+        <h1
+          className={`text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-6 ${theme === "dark" ? "text-gray-900" : "text-yellow-400"
+            } ${alegreya.className}`}
+        >
+          {text[language].title}
+        </h1>
 
-      {/* Texto Explicativo */}
-      <div className="bg-white/80 dark:bg-black/70 p-6 md:p-8 rounded-xl shadow-xl max-w-3xl border border-gray-300 dark:border-gray-600 text-justify">
-        <p className="text-lg text-gray-900 dark:text-gray-100 leading-relaxed">
+        {/* Texto Explicativo */}
+        <p className="text-sm sm:text-base leading-relaxed text-justify">
           {text[language].description}
         </p>
       </div>
@@ -89,7 +98,10 @@ export default function Projects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-gray-100 dark:bg-gray-800 p-6 md:p-8 rounded-lg shadow-lg w-full max-w-2xl"
+            className={`p-6 md:p-8 rounded-lg shadow-lg w-full max-w-2xl border transition-all ${theme === "dark"
+                ? "bg-white/90 text-gray-900 border-gray-300" // Fundo claro no modo escuro
+                : "bg-gray-900/90 text-white border-gray-600" // Fundo escuro no modo claro
+              }`}
           >
             {/* Imagem do Projeto */}
             <div className="flex justify-center">
@@ -103,14 +115,12 @@ export default function Projects() {
             </div>
 
             {/* Nome do Projeto */}
-            <h2 className="mt-4 text-2xl font-bold text-[#1f536e] text-center">
+            <h2 className="mt-4 text-2xl font-bold text-center">
               {project.name[language]}
             </h2>
 
             {/* Tecnologias Utilizadas */}
-            <p className="text-gray-700 dark:text-gray-300 mt-4 font-semibold text-center">
-              {text[language].tech}
-            </p>
+            <p className="mt-4 font-semibold text-center">{text[language].tech}</p>
             <div className="flex flex-wrap justify-center gap-6 mt-2">
               {project.technologies.map((tech, i) => (
                 <div key={i} className="flex flex-col items-center">

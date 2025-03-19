@@ -30,13 +30,21 @@ export default function Opinions() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Título da página */}
-      <h1 className={`text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 text-[#1f536e] text-center ${alegreya.className}`}>
-        {language === "EN" ? "Opinions" : "Opiniões"}
-      </h1>
+      {/* Caixa cobrindo título e conteúdo */}
+      <div
+        className={`p-8 rounded-xl shadow-2xl max-w-4xl w-full border transition-all ${theme === "dark"
+            ? "bg-white/90 text-gray-900 border-gray-300" // Fundo claro no modo escuro
+            : "bg-gray-900/90 text-white border-gray-600" // Fundo escuro no modo claro
+          }`}
+      >
+        {/* Título da página */}
+        <h1
+          className={`text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-6 ${theme === "dark" ? "text-gray-900" : "text-yellow-400"
+            } ${alegreya.className}`}
+        >
+          {language === "EN" ? "Opinions" : "Opiniões"}
+        </h1>
 
-      {/* Container Principal */}
-      <div className="w-full max-w-4xl bg-white/80 dark:bg-black/70 p-8 rounded-xl shadow-2xl border border-gray-300 dark:border-gray-600 text-justify">
         {/* Formulário para Enviar Opinião */}
         <OpinionForm />
 

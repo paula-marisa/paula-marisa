@@ -46,17 +46,21 @@ const Menu = () => {
     >
       {/* Menu interativo (Centralizado) */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 md:gap-10 mt-12 w-full max-w-4xl justify-center items-center">
-        {menuText[language].map((item, index) => (
+        {menuText[language].map((item) => (
           <button
             key={item.route}
             onClick={() => router.push(item.route)}
             className={`relative flex flex-col items-center justify-center 
-                        bg-gray-800 rounded-full shadow-lg p-6 hover:scale-110 
+                        rounded-full shadow-lg p-6 hover:scale-110 
                         transition-transform duration-300 w-28 h-28 
-                        sm:w-36 sm:h-36 md:w-40 md:h-40 lg:w-44 lg:h-44 xl:w-48 xl:h-48`}
+                        sm:w-36 sm:h-36 md:w-40 md:h-40 lg:w-44 lg:h-44 xl:w-48 xl:h-48
+                        ${theme === "dark"
+                ? "bg-gray-200 text-gray-900" // Fundo claro no modo escuro
+                : "bg-gray-800 text-white" // Fundo escuro no modo claro
+              }`}
           >
             <img src={item.img} alt={item.label} className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20" />
-            <span className="text-white mt-2 text-sm sm:text-base md:text-lg font-semibold">{item.label}</span>
+            <span className="mt-2 text-sm sm:text-base md:text-lg font-semibold">{item.label}</span>
           </button>
         ))}
       </div>

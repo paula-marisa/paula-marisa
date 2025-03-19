@@ -8,7 +8,7 @@
   --accent: #FACC15;
   --font-sans: var(--font-geist-sans, Arial, Helvetica, sans-serif);
   --font-mono: var(--font-geist-mono, monospace);
-  --font-title: "Poppins", sans-serif; 
+  --font-title: "Poppins", sans-serif;
   --font-text: "Roboto", sans-serif;
 }
 
@@ -53,7 +53,9 @@ body {
 }
 
 /* Adicionar destaque a elementos importantes */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--color-primary);
   font-family: var(--font-title);
   font-weight: bold;
@@ -113,3 +115,21 @@ button:hover {
   font-weight: bold;
   text-align: center;
 }
+
+/* Estilizar todas as caixas de entrada de texto */
+input, textarea {
+  background-color: #1e293b; /* Cinza escuro para modo claro */
+  color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Quando o tema for escuro */
+.dark input, .dark textarea {
+  background-color: white; /* Fundo branco no modo escuro */
+  color: black;
+  border: 1px solid #555;
+}
+

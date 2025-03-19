@@ -64,7 +64,12 @@ const OpinionsList = () => {
             </h2>
 
             {opinions.length === 0 ? (
-                <p className="text-white text-center mt-2">
+                <p
+                    className={`text-center mt-2 p-4 rounded-lg font-semibold transition-all ${document.documentElement.classList.contains("dark")
+                            ? "bg-white/90 text-gray-900 border border-gray-300" // Fundo claro no modo escuro
+                            : "bg-gray-900/90 text-white border border-gray-600" // Fundo escuro no modo claro
+                        }`}
+                >
                     {language === "EN" ? "No approved feedbacks yet." : "Ainda não há opiniões aprovadas."}
                 </p>
             ) : (

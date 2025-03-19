@@ -71,7 +71,7 @@ const HeaderOptions: React.FC = () => {
             </li>
             <li className="py-2 hover:text-blue-500">
               <a href="/menu" onClick={() => setMenuOpen(false)}>
-                {language === "EN" ? "Home" : "Início"}
+                {language === "EN" ? "Home" : "Menu"}
               </a>
             </li>
             <li className="py-2 hover:text-blue-500">

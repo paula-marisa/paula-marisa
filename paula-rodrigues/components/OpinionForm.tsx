@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useLanguage } from "@/components/LanguageContext";
 
 const OpinionForm = () => {
@@ -111,25 +111,34 @@ const OpinionForm = () => {
     };
 
     return (
-        <div className="bg-white/80 dark:bg-transparent p-10 rounded-xl max-w-full text-justify">
-            <h2 className="text-2xl font-bold text-black dark:text-white">{text[language].title}</h2>
+        <div
+            className={`p-10 rounded-xl shadow-2xl max-w-full transition-all ${document.documentElement.classList.contains("dark")
+                    ? "bg-white/90 text-gray-900 border-gray-300"
+                    : "bg-gray-900/90 text-white border-gray-600"
+                }`}
+        >
+            <h2 className="text-2xl font-bold text-center">{text[language].title}</h2>
             <form onSubmit={handleSubmit} className="mt-4 space-y-4">
-                <input
-                    type="text"
-                    placeholder={text[language].firstNamePlaceholder}
-                    value={firstName}
-                    onChange={(e) => setFirstName(e.target.value)}
-                    className="w-full p-2 border border-gray-300 rounded-lg"
-                    required
-                />
-                <input
-                    type="text"
-                    placeholder={text[language].lastNamePlaceholder}
-                    value={lastName}
-                    onChange={(e) => setLastName(e.target.value)}
-                    className="w-full p-2 border border-gray-300 rounded-lg"
-                    required
-                />
+                {/* Linha com Primeiro Nome e Último Nome */}
+                <div className="flex flex-col sm:flex-row gap-4">
+                    <input
+                        type="text"
+                        placeholder={text[language].firstNamePlaceholder}
+                        value={firstName}
+                        onChange={(e) => setFirstName(e.target.value)}
+                        className="w-full sm:w-1/2 p-2 border border-gray-300 rounded-lg"
+                        required
+                    />
+                    <input
+                        type="text"
+                        placeholder={text[language].lastNamePlaceholder}
+                        value={lastName}
+                        onChange={(e) => setLastName(e.target.value)}
+                        className="w-full sm:w-1/2 p-2 border border-gray-300 rounded-lg"
+                        required
+                    />
+                </div>
+
                 <input
                     type="email"
                     placeholder={text[language].emailPlaceholder}
@@ -152,7 +161,7 @@ const OpinionForm = () => {
                         onChange={() => setWork(!work)}
                         className="w-5 h-5"
                     />
-                    <label className="text-black dark:text-white">{text[language].workedWithMe}</label>
+                    <label className="font-bold">{text[language].workedWithMe}</label>
                 </div>
 
                 {/* Exibir campo correto com base na resposta */}
@@ -178,7 +187,7 @@ const OpinionForm = () => {
 
                 {/* Seção de Avaliação por Estrelas */}
                 <div>
-                    <p className="text-black dark:text-white">{text[language].rating}</p>
+                    <p className="font-bold">{text[language].rating}</p>
                     <StarRating rating={rating} onSetRating={setRating} />
                 </div>
 
@@ -190,7 +199,7 @@ const OpinionForm = () => {
             {/* Pop-up informativo centralizado com animação */}
             {showPopup && (
                 <div className="fixed inset-0 flex items-center justify-center bg-black/30">
-                    <div className="bg-white dark:bg-gray-800 text-black dark:text-white p-6 rounded-lg shadow-lg text-center animate-fade-in-out">
+                    <div className="p-6 rounded-lg shadow-lg text-center animate-fade-in-out bg-white dark:bg-gray-800 text-black dark:text-white">
                         <p className="text-lg font-semibold">{popupMessage}</p>
                         <button
                             onClick={() => setShowPopup(false)}

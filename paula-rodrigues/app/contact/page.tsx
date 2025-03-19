@@ -27,28 +27,37 @@ export default function Contact() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Título da página */}
-      <h1 className={`text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 text-[#1f536e] text-center ${alegreya.className}`}>
-        {language === "EN" ? "Contacts" : "Contatos"}
-      </h1>
+      {/* Caixa de fundo cobrindo o título e os contatos */}
+      <div
+        className={`p-8 md:p-10 rounded-xl shadow-2xl max-w-3xl w-full border transition-all ${theme === "dark"
+            ? "bg-white/90 text-gray-900 border-gray-300" // Fundo claro no modo escuro
+            : "bg-gray-900/90 text-white border-gray-600" // Fundo escuro no modo claro
+          }`}
+      >
+        {/* Título da página */}
+        <h1
+          className={`text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-6 ${theme === "dark" ? "text-gray-900" : "text-yellow-400"
+            } ${alegreya.className}`}
+        >
+          {language === "EN" ? "Contacts" : "Contatos"}
+        </h1>
 
-      {/* Caixa de contatos */}
-      <div className="bg-white/80 dark:bg-black/70 p-8 md:p-10 rounded-xl shadow-2xl max-w-3xl w-full border border-gray-300 dark:border-gray-600 text-center">
-        <p className="text-lg text-gray-900 dark:text-gray-100 leading-relaxed mb-6 font-bold">
+        {/* Texto de introdução */}
+        <p className="text-lg leading-relaxed text-center font-bold">
           {language === "EN"
             ? "Feel free to reach out to me through the following channels:"
             : "Sinta-se à vontade para me contatar pelos canais abaixo:"}
         </p>
 
-        {/* Ajuste para separar os links corretamente */}
-        <div className="flex flex-col space-y-4 md:space-y-3 text-lg">
+        {/* Links de contato em linha em telas grandes e empilhados no mobile */}
+        <div className="flex flex-col md:flex-row justify-center items-center gap-6 text-lg mt-6">
           {/* E-mail */}
           <a
             href="mailto:paulamsr@hotmail.com"
-            className="flex items-center space-x-3 justify-center text-gray-900 dark:text-white font-bold hover:text-[#00ACEA] transition"
+            className="flex items-center space-x-2 font-bold hover:text-[#00ACEA] transition"
           >
             <FaEnvelope size={22} />
-            <span>paulamsr@hotmail.com</span>
+            <span>Email</span>
           </a>
 
           {/* LinkedIn */}
@@ -56,10 +65,10 @@ export default function Contact() {
             href="https://www.linkedin.com/in/paulasrodrigues/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-3 justify-center text-gray-900 dark:text-white font-bold hover:text-[#00ACEA] transition"
+            className="flex items-center space-x-2 font-bold hover:text-[#00ACEA] transition"
           >
             <FaLinkedin size={22} />
-            <span>linkedin.com/in/paulasrodrigues</span>
+            <span>LinkedIn</span>
           </a>
 
           {/* GitHub */}
@@ -67,10 +76,10 @@ export default function Contact() {
             href="https://github.com/paula-marisa"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-3 justify-center text-gray-900 dark:text-white font-bold hover:text-[#00ACEA] transition"
+            className="flex items-center space-x-2 font-bold hover:text-[#00ACEA] transition"
           >
             <FaGithub size={22} />
-            <span>github.com/paula-marisa</span>
+            <span>GitHub</span>
           </a>
         </div>
       </div>
