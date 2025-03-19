@@ -64,14 +64,46 @@ const HeaderOptions: React.FC = () => {
       {menuOpen && (
         <div className="absolute top-12 right-0 bg-white dark:bg-gray-800 shadow-lg rounded-lg w-48 p-4">
           <ul className="text-gray-700 dark:text-white">
-            <li className="py-2 hover:text-blue-500"><a href="/"> {language === "EN" ? "Game" : "Jogo"}</a></li>
-            <li className="py-2 hover:text-blue-500"><a href="/menu"> {language === "EN" ? "Home" : "Início"}</a></li>
-            <li className="py-2 hover:text-blue-500"><a href="/about"> {language === "EN" ? "About Me" : "Sobre Mim"}</a></li>
-            <li className="py-2 hover:text-blue-500"><a href="/skills"> {language === "EN" ? "Skills" : "Habilidades"}</a></li>
-            <li className="py-2 hover:text-blue-500"><a href="/experience"> {language === "EN" ? "Experience" : "Experiência"}</a></li>
-            <li className="py-2 hover:text-blue-500"><a href="/projects"> {language === "EN" ? "Projects" : "Projetos"}</a></li>
-            <li className="py-2 hover:text-blue-500"><a href="/opinions"> {language === "EN" ? "Opinions" : "Opiniões"}</a></li>
-            <li className="py-2 hover:text-blue-500"><a href="/contact"> {language === "EN" ? "Contact" : "Contato"}</a></li>
+            <li className="py-2 hover:text-blue-500">
+              <a href="/" onClick={() => setMenuOpen(false)}>
+                {language === "EN" ? "Game" : "Jogo"}
+              </a>
+            </li>
+            <li className="py-2 hover:text-blue-500">
+              <a href="/menu" onClick={() => setMenuOpen(false)}>
+                {language === "EN" ? "Home" : "Início"}
+              </a>
+            </li>
+            <li className="py-2 hover:text-blue-500">
+              <a href="/about" onClick={() => setMenuOpen(false)}>
+                {language === "EN" ? "About Me" : "Sobre Mim"}
+              </a>
+            </li>
+            <li className="py-2 hover:text-blue-500">
+              <a href="/skills" onClick={() => setMenuOpen(false)}>
+                {language === "EN" ? "Skills" : "Habilidades"}
+              </a>
+            </li>
+            <li className="py-2 hover:text-blue-500">
+              <a href="/experience" onClick={() => setMenuOpen(false)}>
+                {language === "EN" ? "Experience" : "Experiência"}
+              </a>
+            </li>
+            <li className="py-2 hover:text-blue-500">
+              <a href="/projects" onClick={() => setMenuOpen(false)}>
+                {language === "EN" ? "Projects" : "Projetos"}
+              </a>
+            </li>
+            <li className="py-2 hover:text-blue-500">
+              <a href="/opinions" onClick={() => setMenuOpen(false)}>
+                {language === "EN" ? "Opinions" : "Opiniões"}
+              </a>
+            </li>
+            <li className="py-2 hover:text-blue-500">
+              <a href="/contact" onClick={() => setMenuOpen(false)}>
+                {language === "EN" ? "Contact" : "Contato"}
+              </a>
+            </li>
           </ul>
         </div>
       )}
