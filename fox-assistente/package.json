@@ -1,0 +1,15 @@
+{
+  "name": "fox-assistente",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix fox-renderer\" \"wait-on http://localhost:5173 && electron .\"",
+    "build": "npm run build --prefix fox-renderer",
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "electron": "^35.1.2",
+    "wait-on": "^7.2.0"
+  }
+}

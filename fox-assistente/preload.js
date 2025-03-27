@@ -1,0 +1,1 @@
+// fox-assistente/preload.js
