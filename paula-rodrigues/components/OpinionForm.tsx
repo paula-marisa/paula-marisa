@@ -94,13 +94,13 @@ const OpinionForm = () => {
     // Componente de Estrelas Interativas
     const StarRating = ({ rating, onSetRating }: { rating: number; onSetRating: (value: number) => void }) => {
         return (
-            <div className="flex space-x-1">
+            <div className="flex space-x-0.5 justify-center sm:justify-start whitespace-nowrap">
                 {[1, 2, 3, 4, 5].map((star) => (
                     <button
                         key={star}
                         type="button"
                         onClick={() => onSetRating(star)}
-                        className={`text-3xl transition-colors duration-200 ${star <= rating ? "text-yellow-500" : "text-gray-400"
+                        className={`text-base sm:text-xl md:text-2xl lg:text-3xl transition-colors duration-200 ${star <= rating ? "text-yellow-500" : "text-gray-400"
                             }`}
                     >
                         {star <= rating ? "★" : "☆"}
@@ -112,15 +112,14 @@ const OpinionForm = () => {
 
     return (
         <div
-            className={`p-10 rounded-xl shadow-2xl max-w-full transition-all ${document.documentElement.classList.contains("dark")
-                    ? "bg-white/90 text-gray-900 border-gray-300"
-                    : "bg-gray-900/90 text-white border-gray-600"
+            className={`p-4 sm:p-6 md:p-10 rounded-xl shadow-2xl max-w-md mx-auto w-full transition-all ${document.documentElement.classList.contains("dark")
+                ? "bg-white/90 text-gray-900 border-gray-300"
+                : "bg-gray-900/90 text-white border-gray-600"
                 }`}
         >
-            <h2 className="text-2xl font-bold text-center">{text[language].title}</h2>
-            <form onSubmit={handleSubmit} className="mt-4 space-y-4">
-                {/* Linha com Primeiro Nome e Último Nome */}
-                <div className="flex flex-col sm:flex-row gap-4">
+            <h2 className="text-xl sm:text-2xl font-bold text-center">{text[language].title}</h2>
+            <form onSubmit={handleSubmit} className="mt-4 space-y-4 text-sm sm:text-base">
+                <div className="flex flex-col sm:flex-row gap-2">
                     <input
                         type="text"
                         placeholder={text[language].firstNamePlaceholder}
@@ -198,9 +197,9 @@ const OpinionForm = () => {
 
             {/* Pop-up informativo centralizado com animação */}
             {showPopup && (
-                <div className="fixed inset-0 flex items-center justify-center bg-black/30">
-                    <div className="p-6 rounded-lg shadow-lg text-center animate-fade-in-out bg-white dark:bg-gray-800 text-black dark:text-white">
-                        <p className="text-lg font-semibold">{popupMessage}</p>
+                <div className="fixed inset-0 flex items-center justify-center bg-black/30 z-50">
+                    <div className="p-4 sm:p-6 rounded-lg shadow-lg text-center animate-fade-in-out bg-white dark:bg-gray-800 text-black dark:text-white max-w-sm w-full mx-4">
+                        <p className="text-base font-semibold">{popupMessage}</p>
                         <button
                             onClick={() => setShowPopup(false)}
                             className="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg"
