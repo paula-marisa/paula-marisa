@@ -101,3 +101,41 @@ dragWrapper.addEventListener('mouseenter', () => {
 dragWrapper.addEventListener('mouseleave', () => {
   window.electronAPI?.mouseLeave();
 });
+
+let clickCount = 0;
+let clickTimer = null;
+
+function showCloseConfirmation() {
+  const confirmClose = window.confirm("Deseja fechar a aplicação?");
+  if (confirmClose) {
+    window.electronAPI.closeApp();
+  }
+}
+
+canvas.addEventListener('click', (event) => {
+  // Raycasting para verificar se clicou no modelo
+  const rect = canvas.getBoundingClientRect();
+  const mouse = new THREE.Vector2(
+    ((event.clientX - rect.left) / rect.width) * 2 - 1,
+    -((event.clientY - rect.top) / rect.height) * 2 + 1
+  );
+
+  const raycaster = new THREE.Raycaster();
+  raycaster.setFromCamera(mouse, camera);
+
+  const intersects = modeloAtual ? raycaster.intersectObject(modeloAtual, true) : [];
+
+  if (intersects.length > 0) {
+    clickCount++;
+    clearTimeout(clickTimer);
+    clickTimer = setTimeout(() => {
+      clickCount = 0;
+    }, 800); // 800ms para clicar 3 vezes
+
+    if (clickCount === 3) {
+      clickCount = 0;
+      showCloseConfirmation();
+    }
+  }
+});
+

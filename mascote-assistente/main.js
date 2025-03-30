@@ -63,6 +63,10 @@ ipcMain.on('mouse-leave', () => {
   win.setIgnoreMouseEvents(true, { forward: true });
 });
 
+ipcMain.on('app-close', () => {
+  app.quit();
+});
+
 // Inicialização
 app.whenReady().then(createWindow);
 app.on('window-all-closed', () => {
