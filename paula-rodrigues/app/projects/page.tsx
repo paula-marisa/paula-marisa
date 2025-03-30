@@ -62,7 +62,12 @@ const projects = [
       PT: "Assistente 3D",
     },
     image: "/images/mascote.png",
-    download: "https://paula-rodrigues.vercel.app/downloads/mascote-assistente.zip",
+    downloads: [
+      {
+        name: "Parte 1",
+        url: "https://myisepipp-my.sharepoint.com/:u:/r/personal/1191505_isep_ipp_pt/Documents/Assitente%20Virtual/Mascote%20Virtual%20Setup%201.0.0.exe?csf=1&web=1&e=bgQ4xa",
+      },
+    ],
     linkGitHub: "https://github.com/paula-marisa/paula-marisa/tree/main/mascote-assistente",
     technologies: [
       { name: "Electron", icon: <FaNodeJs className="text-green-500 text-3xl" /> },
@@ -167,15 +172,18 @@ export default function Projects() {
                   🔗 {text[language].live}
                 </a>
               )}
-              {project.download && (
-                <a
-                  href={project.download}
-                  download
-                  className="px-6 py-3 bg-[#1f536e] text-white font-bold rounded-lg shadow-lg hover:bg-[#00ACEA] transition flex items-center gap-2 justify-center"
-                >
-                  📦 {text[language].download}
-                </a>
-              )}
+              {project.downloads &&
+                project.downloads.map((file, i) => (
+                  <a
+                    key={i}
+                    href={file.url}
+                    download
+                    className="px-6 py-3 bg-[#1f536e] text-white font-bold rounded-lg shadow-lg hover:bg-[#00ACEA] transition flex items-center gap-2 justify-center"
+                  >
+                    📦 {text[language].download} {file.name}
+                  </a>
+                ))
+              }
               <a
                 href={project.linkGitHub}
                 target="_blank"
