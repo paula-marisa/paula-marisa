@@ -65,7 +65,7 @@ const projects = [
     downloads: [
       {
         name: "Parte 1",
-        url: "https://myisepipp-my.sharepoint.com/:u:/r/personal/1191505_isep_ipp_pt/Documents/Assitente%20Virtual/Mascote%20Virtual%20Setup%201.0.0.exe?csf=1&web=1&e=bgQ4xa",
+        url: "https://myisepipp-my.sharepoint.com/:u:/g/personal/1191505_isep_ipp_pt/EaV4_6xnMcVOpAobffnFsBcB_eclRy-y45xMk0jCiPX20A",
       },
     ],
     linkGitHub: "https://github.com/paula-marisa/paula-marisa/tree/main/mascote-assistente",
