@@ -27,12 +27,12 @@ let estadoAtual = 'base';
 
 // Função para trocar de modelo da mascote
 function trocarMascote(estado) {
-  if (estado === estadoAtual) return; // não recarrega se já estiver no estado
+  if (estado === estadoAtual) return;
   estadoAtual = estado;
 
   const ficheiro = estadosMascote[estado] || estadosMascote.base;
 
-  loader.load(`/mascote/${ficheiro}`, (gltf) => {
+  loader.load(`mascote/${ficheiro}`, (gltf) => {
     if (modeloAtual) scene.remove(modeloAtual);
 
     modeloAtual = gltf.scene;

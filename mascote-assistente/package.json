@@ -1,18 +1,43 @@
 {
-  "name": "mascote-assistente",
+  "name": "mascote-virtual",
   "version": "1.0.0",
+  "description": "Mascote 3D interativa para secretária",
   "main": "main.js",
   "scripts": {
-    "dev": "concurrently \"npm run dev --prefix mascote-renderer\" \"wait-on http://localhost:5173 && electron .\"",
-    "build": "npm run build --prefix mascote-renderer",
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder"
   },
+  "author": "Paula Rodrigues",
+  "license": "MIT",
+  "type": "commonjs",
   "devDependencies": {
-    "concurrently": "^8.2.2",
-    "electron": "^35.1.2",
-    "wait-on": "^7.2.0"
+    "electron": "^25.9.0",
+    "electron-builder": "^24.6.0"
   },
   "dependencies": {
-    "active-win": "^8.2.1"
+    "active-win": "^8.0.0"
+  },
+  "build": {
+    "appId": "com.paula.mascote",
+    "productName": "Mascote Virtual",
+    "files": [
+      "mascote-renderer/dist/**/*",
+      "mascote-renderer/mascote/**/*",
+      "main.js",
+      "preload.js",
+      "index.html",
+      "package.json"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico",
+      "sign": false,
+      "signingHashAlgorithms": [],
+      "signAndEditExecutable": false,
+      "verifyUpdateCodeSignature": false
+    }
   }
 }

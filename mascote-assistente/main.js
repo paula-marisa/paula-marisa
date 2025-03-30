@@ -24,7 +24,7 @@ function createWindow() {
     }
   });
 
-  win.loadURL('http://localhost:5173');
+  win.loadFile(path.join(__dirname, 'mascote-renderer/dist/index.html'));
   win.setIgnoreMouseEvents(true, { forward: true });
 
   // Verificar apps ativas a cada 0.5 segundos
