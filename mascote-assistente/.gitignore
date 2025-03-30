@@ -1,0 +1,18 @@
+# Node modules
+node_modules/
+mascote-renderer/node_modules/
+
+# Build outputs
+dist/
+mascote-renderer/dist/
+
+# VSCode
+.vscode/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
