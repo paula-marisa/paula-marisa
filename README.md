@@ -61,3 +61,5 @@ Procuro uma oportunidade de:
 
 - 💼 LinkedIn: [o meu LinkedIn](...)
 - 📧 Email: ...
+
+https://dev.to/github/10-standout-github-profile-readmes-h2o
