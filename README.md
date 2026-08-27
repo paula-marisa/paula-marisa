@@ -4,7 +4,7 @@
 
 ### 🎮 T-Rex Runner
 
-[![Play Dino Game](https://img.shields.io/badge/🦖%20PLAY%20DINO%20GAME-000000?style=for-the-badge)]([https://paula-marisa.github.io/t-rex-runner/](https://github.com/paula-marisa/paula-marisa/tree/main/t-rex-runner-gh-pages))
+[![Play Dino Game](https://img.shields.io/badge/🦖%20PLAY%20DINO%20GAME-000000?style=for-the-badge)]([(https://github.com/paula-marisa/paula-marisa/tree/main/t-rex-runner-gh-pages)](https://wayou.github.io/t-rex-runner/))
 
 </div>
 
