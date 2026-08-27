@@ -1,12 +1,7 @@
-## 🦖 Need a break from coding?
-
 <p align="center">
-  <img src="https://github.com/paula-marisa/paula-marisa/blob/main/t-rex-runner-gh-pages/assets/screenshot.gif" width="700">
+  <img src="https://github.com/paula-marisa/paula-marisa/blob/main/t-rex.gif" width="700">
 </p>
 
-<p align="center">
-  <b>↑ SPACE TO JUMP • ↓ TO DUCK</b>
-</p>
 # Olá! Eu sou a Paula
 
 Engenheira Informática  
