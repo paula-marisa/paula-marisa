@@ -1,3 +1,9 @@
+## Jogo Dino
+
+Apetece-te jogar? 
+
+[![Jogar Dino](https://img.shields.io/badge/🦖%20Jogar%20Dino-000000?style=for-the-badge)](https://dino-chrome.com/pt/fullscreen)
+
 # Olá! Eu sou a Paula
 
 Engenheira Informática  
