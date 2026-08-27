@@ -1,8 +1,12 @@
-## Jogo Dino
+## 🦖 Take a break!
 
-Apetece-te jogar? 
+<div align="center">
 
-[![Jogar Dino](https://img.shields.io/badge/🦖%20Jogar%20Dino-000000?style=for-the-badge)](https://dino-chrome.com/pt/fullscreen)
+### 🎮 T-Rex Runner
+
+[![Play Dino Game](https://img.shields.io/badge/🦖%20PLAY%20DINO%20GAME-000000?style=for-the-badge)]([https://paula-marisa.github.io/t-rex-runner/](https://github.com/paula-marisa/paula-marisa/tree/main/t-rex-runner-gh-pages))
+
+</div>
 
 # Olá! Eu sou a Paula
 
