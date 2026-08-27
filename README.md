@@ -1,13 +1,12 @@
-## 🦖 Take a break!
+## 🦖 Need a break from coding?
 
-<div align="center">
+<p align="center">
+  <img src="https://github.com/paula-marisa/paula-marisa/blob/main/t-rex-runner-gh-pages/assets/screenshot.gif" width="700">
+</p>
 
-### 🎮 T-Rex Runner
-
-[![Play Dino Game](https://img.shields.io/badge/🦖%20PLAY%20DINO%20GAME-000000?style=for-the-badge)]([(https://github.com/paula-marisa/paula-marisa/tree/main/t-rex-runner-gh-pages)](https://wayou.github.io/t-rex-runner/))
-
-</div>
-
+<p align="center">
+  <b>↑ SPACE TO JUMP • ↓ TO DUCK</b>
+</p>
 # Olá! Eu sou a Paula
 
 Engenheira Informática  
