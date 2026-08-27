@@ -177,11 +177,11 @@ I also have an **older version of my personal CV/portfolio website**, developed 
 
 The project is kept private because the code represents an earlier version of my portfolio, but the website can be shared as an example of my previous web development work.
 
-👉 **View my previous CV / portfolio**
+**View my previous CV / portfolio**
 
 ---
 
-## 🎯 What I'm Looking For
+## What I'm Looking For
 
 I'm currently looking for opportunities that allow me to gain professional experience in the IT field.
 
