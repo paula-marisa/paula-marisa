@@ -8,7 +8,7 @@
 
 <br>
 
-<a href="YOUR_LINKEDIN_URL">
+<a href="https://www.linkedin.com/in/paulasrodrigues">
   <img src="https://img.shields.io/badge/LinkedIn-Connect-C28FA3?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
 <a href="YOUR_PORTFOLIO_URL">
@@ -105,29 +105,80 @@ const paula = {
 };
 ```
 
+---
+
 # ♡ Tech Stack
 
 ### 💻 Programming & Software Development
 
- \<p align="center">   \<img src="[https://skillicons.dev/icons?i=python,cs,js,ts,cpp,c,html,css&theme=light](https://skillicons.dev/icons?i=python,cs,js,ts,cpp,c,html,css\&theme=light)" /> \</p> \<p align="center">   \<code>Python\</code>   \<code>C#\</code>   \<code>JavaScript\</code>   \<code>TypeScript\</code>   \<code>C/C++\</code> \</p> 
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,cs,js,ts,cpp,c,html,css&theme=light" />
+</p>
+
+<p align="center">
+  <code>Python</code>
+  <code>C#</code>
+  <code>JavaScript</code>
+  <code>TypeScript</code>
+  <code>C/C++</code>
+</p>
 
 ---
 
 ### 📊 Data & Data Engineering
 
- \<p align="center">   \<img src="[https://skillicons.dev/icons?i=python,mysql,postgres&theme=light](https://skillicons.dev/icons?i=python,mysql,postgres\&theme=light)" /> \</p> \<p align="center">   \<code>Pandas\</code>   \<code>NumPy\</code>   \<code>SQL\</code>   \<code>dbt\</code>   \<code>Snowflake\</code>   \<code>Databricks\</code> \</p> \<p align="center">   \<code>Data Modeling\</code>   \<code>ETL\</code>   \<code>Data Pipelines\</code>   \<code>Data Quality\</code>   \<code>Analytics\</code> \</p> 
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,mysql,postgres&theme=light" />
+</p>
+
+<p align="center">
+  <code>Pandas</code>
+  <code>NumPy</code>
+  <code>SQL</code>
+  <code>dbt</code>
+  <code>Snowflake</code>
+  <code>Databricks</code>
+</p>
+
+<p align="center">
+  <code>Data Modeling</code>
+  <code>ETL</code>
+  <code>Data Pipelines</code>
+  <code>Data Quality</code>
+  <code>Analytics</code>
+</p>
 
 ---
 
 ### 🌷 Web & Applications
 
- \<p align="center">   \<img src="[https://skillicons.dev/icons?i=react,html,css,js,ts&theme=light](https://skillicons.dev/icons?i=react,html,css,js,ts\&theme=light)" /> \</p> \<p align="center">   \<code>React\</code>   \<code>Streamlit\</code>   \<code>REST APIs\</code>   \<code>Frontend Development\</code> \</p> 
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=react,html,css,js,ts&theme=light" />
+</p>
+
+<p align="center">
+  <code>React</code>
+  <code>Streamlit</code>
+  <code>REST APIs</code>
+  <code>Frontend Development</code>
+</p>
 
 ---
 
 ### ☁️ Cloud, DevOps & Tools
 
- \<p align="center">   \<img src="[https://skillicons.dev/icons?i=docker,gcp,git,github,airflow,vscode&theme=light](https://skillicons.dev/icons?i=docker,gcp,git,github,airflow,vscode\&theme=light)" /> \</p> \<p align="center">   \<code>Docker\</code>   \<code>Google Cloud\</code>   \<code>Apache Airflow\</code>   \<code>CI/CD\</code>   \<code>Git\</code>   \<code>GitHub\</code> \</p> 
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=docker,gcp,git,github,airflow,vscode&theme=light" />
+</p>
+
+<p align="center">
+  <code>Docker</code>
+  <code>Google Cloud</code>
+  <code>Apache Airflow</code>
+  <code>CI/CD</code>
+  <code>Git</code>
+  <code>GitHub</code>
+</p>
 
 ---
 
@@ -141,21 +192,21 @@ Here are some of the projects that best represent my experience across **softwar
 
 ### End-to-End Data Engineering Pipeline
 
-**View Repository →**
+[**View Repository →**](https://github.com/paula-marisa/REStart_Project)
 
 A modular **data engineering pipeline** developed as part of the **[RE]Start Data Engineering Bootcamp**, designed to simulate a real-world data engineering workflow for processing and validating customer financial data.
 
 **What I worked with**
 
--  Data extraction and transformation 
--  Data cleaning and missing-value handling 
--  Data profiling and quality validation 
--  Automated validation reports 
--  Unit testing with Pytest 
--  Workflow orchestration with Apache Airflow 
--  Docker-based development environment 
--  Google Cloud Storage integration 
--  Execution logging and monitoring 
+- Data extraction and transformation
+- Data cleaning and missing-value handling
+- Data profiling and quality validation
+- Automated validation reports
+- Unit testing with Pytest
+- Workflow orchestration with Apache Airflow
+- Docker-based development environment
+- Google Cloud Storage integration
+- Execution logging and monitoring
 
 **Technologies**
 
@@ -167,7 +218,7 @@ A modular **data engineering pipeline** developed as part of the **[RE]Start Dat
 
 ### Healthcare Data Engineering & Analytics
 
-**View Repository →**
+[**View Repository →**](https://github.com/paula-marisa/health_insights)
 
 An end-to-end **healthcare data engineering and analytics project** using public healthcare data.
 
@@ -175,16 +226,16 @@ The project explores the complete data journey, from data ingestion and transfor
 
 **What I worked with**
 
--  Public healthcare data ingestion 
--  Python-based data processing 
--  Snowflake data warehouse 
--  dbt transformations 
--  Star Schema dimensional modelling 
--  Fact and dimension tables 
--  Data quality testing 
--  Data lineage and documentation 
--  Databricks / Snowflake integration 
--  Interactive Streamlit dashboard 
+- Public healthcare data ingestion
+- Python-based data processing
+- Snowflake data warehouse
+- dbt transformations
+- Star Schema dimensional modelling
+- Fact and dimension tables
+- Data quality testing
+- Data lineage and documentation
+- Databricks / Snowflake integration
+- Interactive Streamlit dashboard
 
 **Technologies**
 
@@ -196,7 +247,7 @@ The project explores the complete data journey, from data ingestion and transfor
 
 ### Software Engineering Academic Project
 
-**View Repository →**
+[**View Repository →**](https://github.com/paula-marisa/Sem5pi-23-24-77)
 
 A university **software engineering project** focused on designing and implementing a system for managing a fleet of robots and drones.
 
@@ -204,14 +255,14 @@ Developed collaboratively as part of my **Computer Engineering degree**, with a 
 
 **What I worked with**
 
--  Team-based software development 
--  Backend development 
--  Frontend development 
--  REST APIs 
--  Domain modelling 
--  Technical documentation 
--  CI/CD 
--  Version control 
+- Team-based software development
+- Backend development
+- Frontend development
+- REST APIs
+- Domain modelling
+- Technical documentation
+- CI/CD
+- Version control
 
 **Technologies**
 
@@ -223,18 +274,18 @@ Developed collaboratively as part of my **Computer Engineering degree**, with a 
 
 ### Federated Learning Dashboard
 
-**View Repository →**
+[**View Repository →**](https://github.com/paula-marisa/FL_Dashboard)
 
 An interactive dashboard developed around a **Federated Learning environment**, combining frontend development with supporting services and containerized components.
 
 **What I worked with**
 
--  Interactive web interface 
--  React frontend 
--  Federated Learning environment 
--  Docker-based components 
--  Integration between project services 
--  Frontend development with TypeScript 
+- Interactive web interface
+- React frontend
+- Federated Learning environment
+- Docker-based components
+- Integration between project services
+- Frontend development with TypeScript
 
 **Technologies**
 
@@ -244,14 +295,14 @@ An interactive dashboard developed around a **Federated Learning environment**, 
 
 # ✿ Other Projects
 
-| ProjectDescription                                        |                                                     |
-| --------------------------------------------------------- | --------------------------------------------------- |
-| **MedicVoice**                                            | Healthcare-focused technology project               |
-| **FinTrack**                                              | Personal finance and financial tracking application |
-| **Weather App**                                           | Weather application using external APIs             |
-| [**T-Rex Runner**](https://wayou.github.io/t-rex-runner/) | Web implementation of the Chrome Dino game          |
-| **Melanie's Smoothies**                                   | Web development project                             |
-| **Mascote Assistente**                                    | Interactive assistant project                       |
+| Project | Description |
+|:---|:---|
+| [**MedicVoice**](https://github.com/paula-marisa/MedicVoice) | Healthcare-focused technology project |
+| [**FinTrack**](https://github.com/paula-marisa/fintrack) | Personal finance and financial tracking application |
+| [**Weather App**](https://github.com/paula-marisa/weather_app) | Weather application using external APIs |
+| [**T-Rex Runner**](https://wayou.github.io/t-rex-runner/) | Web implementation of the Chrome Dino game |
+| [**Melanie's Smoothies**](https://github.com/paula-marisa/melanies_smoothies) | Web development project |
+| [**Mascote Assistente**](https://github.com/paula-marisa/mascote-assistente) | Interactive assistant project |
 
 ---
 
@@ -287,10 +338,7 @@ Technology is constantly evolving, so I'm always working on expanding my knowled
 
 At the moment, I'm focusing on:
 
-```
-```
-
-```
+```text
 Software Engineering
        ↓
 Data Engineering
@@ -310,17 +358,23 @@ I believe the best way to learn is by **building, experimenting and solving real
 
 # 📊 GitHub Activity
 
- \<div align="center"> \<img height="170em" src="[https://github-readme-stats.vercel.app/api?username=paula-marisa&show\_icons=true&hide\_border=true&theme=transparent&title\_color=C28FA3&icon\_color=C28FA3&text\_color=755B66](https://github-readme-stats.vercel.app/api?username=paula-marisa\&show_icons=true\&hide_border=true\&theme=transparent\&title_color=C28FA3\&icon_color=C28FA3\&text_color=755B66)" /> \<img height="170em" src="[https://github-readme-stats.vercel.app/api/top-langs/?username=paula-marisa&layout=compact&hide\_border=true&theme=transparent&title\_color=C28FA3&text\_color=755B66](https://github-readme-stats.vercel.app/api/top-langs/?username=paula-marisa\&layout=compact\&hide_border=true\&theme=transparent\&title_color=C28FA3\&text_color=755B66)" /> \</div> 
+<div align="center">
+
+<img height="170em" src="https://github-readme-stats.vercel.app/api?username=paula-marisa&show_icons=true&hide_border=true&theme=transparent&title_color=C28FA3&icon_color=C28FA3&text_color=755B66" />
+
+<img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=paula-marisa&layout=compact&hide_border=true&theme=transparent&title_color=C28FA3&text_color=755B66" />
+
+</div>
 
 ---
 
 # 🐍 Contribution Garden
 
- \<div align="center"> 
+<div align="center">
 
+<img src="https://raw.githubusercontent.com/paula-marisa/paula-marisa/output/github-contribution-grid-snake.svg" alt="GitHub contribution snake animation" />
 
-
- \</div> 
+</div>
 
 ---
 
@@ -328,34 +382,20 @@ I believe the best way to learn is by **building, experimenting and solving real
 
 I'm always happy to connect with people interested in **technology, software, data, projects and new opportunities**.
 
- \<div align="center"> \<a href="YOUR\_LINKEDIN\_URL">   \<img src="[https://img.shields.io/badge/LinkedIn-Let](https://img.shields.io/badge/LinkedIn-Let)'s%20Connect-C28FA3?style=for-the-badge&logo=linkedin&logoColor=white" /> \</a> \<a href="mailto\:YOUR\_EMAIL">   \<img src="[https://img.shields.io/badge/Email-Get%20in%20touch-C28FA3?style=for-the-badge&logo=gmail&logoColor=white](https://img.shields.io/badge/Email-Get%20in%20touch-C28FA3?style=for-the-badge\&logo=gmail\&logoColor=white)" /> \</a> \</div> 
+<div align="center">
+
+<a href="YOUR_LINKEDIN_URL">
+  <img src="https://img.shields.io/badge/LinkedIn-Let's%20Connect-C28FA3?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+
+<a href="mailto:YOUR_EMAIL">
+  <img src="https://img.shields.io/badge/Email-Get%20in%20touch-C28FA3?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
+
+</div>
 
 ---
 
- \<div align="center"> 
-
-### ✦ Thanks for visiting my profile ✦
-
-*Building, learning and growing — one project at a time.*
-
- \<br> \<img src="[https://c.tenor.com/w3APLkMuTX0AAAAC/computer-work.gif](https://c.tenor.com/w3APLkMuTX0AAAAC/computer-work.gif)" width="450"> 
-
-\<br>\<br>
-
-♡ · ✦ · ♡ · ✦ · ♡
-
- \</div> \`\`\` 
-
-### Uma alteração que fiz de propósito
-
-Usei o GIF **duas vezes? Não** — no código acima ele aparece apenas no `About Me` e novamente no final? **Na verdade aparece nos dois locais**, e eu acho que devemos corrigir isso para ficar mais elegante: **eu deixaria o GIF apenas no** **`About Me`**, porque ali funciona como elemento visual junto da apresentação. No final manteria apenas uma pequena assinatura.
-
-Ou seja, substituiria o final por:
-
-```
-```
-
-```
 <div align="center">
 
 ### ✦ Thanks for visiting my profile ✦
@@ -367,6 +407,3 @@ Ou seja, substituiria o final por:
 ♡ · ✦ · ♡ · ✦ · ♡
 
 </div>
-```
-
-
