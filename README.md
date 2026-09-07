@@ -1,226 +1,372 @@
-<p align="center">
-  <img src="https://github.com/paula-marisa/paula-marisa/blob/main/t-rex.gif" width="700">
-</p>
+<!-- ========================= HEADER ========================= -->
 
-# Hi, I'm Paula
+<img width="100%" src="https://capsule-render.vercel.app/api?type=blur&height=240&color=F6E1E8&text=Paula%20Rodrigues&fontSize=50&fontColor=755B66&animation=fadeIn&fontAlignY=50" />
 
-**Computer Engineer | Software Development | Data Engineering**
+<div align="center">
 
-I'm a Computer Engineer from Portugal with a strong interest in **software development, data engineering, data-driven applications and technology**.
+<img src="https://readme-typing-svg.herokuapp.com/?font=Montserrat&weight=500&size=21&duration=3000&pause=1000&color=8A657D&center=true&vCenter=true&width=700&lines=Computer+Engineer+%F0%9F%92%BB;Software+Development+%7C+Data+Engineering;Building+software+%26+data-driven+solutions;Always+learning%2C+always+building" />
 
-I enjoy building projects that combine software, data and problem solving, and I'm continuously working on improving my technical skills through academic, personal and practical projects.
+<br>
 
-I'm currently looking for an opportunity in **IT**, particularly a **part-time position or internship**, where I can gain professional experience, contribute to real-world projects and continue developing my skills.
+<a href="YOUR_LINKEDIN_URL">
+  <img src="https://img.shields.io/badge/LinkedIn-Connect-C28FA3?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+<a href="YOUR_PORTFOLIO_URL">
+  <img src="https://img.shields.io/badge/Portfolio-Visit-C28FA3?style=for-the-badge&logo=google-chrome&logoColor=white" />
+</a>
+<a href="https://github.com/paula-marisa">
+  <img src="https://img.shields.io/badge/GitHub-paula--marisa-C28FA3?style=for-the-badge&logo=github&logoColor=white" />
+</a>
 
----
+<br><br>
 
-## About Me
+<img src="https://komarev.com/ghpvc/?username=paula-marisa&color=C28FA3&style=flat-square&label=Profile+Views" />
 
-- Degree in **Computer Engineering**
-- Interested in **Software Development and Data Engineering**
-- Interested in **Data Analysis and Data-driven applications**
-- Continuously learning and improving my technical skills
-- Enjoy solving problems and turning ideas into working solutions
-- Interested in working collaboratively on real-world projects
-- Based in Portugal
-
----
-
-## Technologies & Tools
-
-### Programming & Development
-
-- Python
-- C#
-- JavaScript
-- TypeScript
-- SQL
-- C/C++
-
-### Data & Data Engineering
-
-- Pandas
-- dbt
-- Snowflake
-- Databricks
-- Data Modeling
-- ETL / Data Pipelines
-- Data Quality & Validation
-
-### Web & Applications
-
-- React
-- Streamlit
-- HTML
-- CSS
-- REST APIs
-
-### Cloud, Automation & DevOps
-
-- Google Cloud Storage
-- Apache Airflow
-- Docker
-- CI/CD
-
-### Tools
-
-- Git
-- GitHub
-- Visual Studio Code
-- Pytest
+</div>
 
 ---
 
-## Featured Projects
+## ✦ About Me
 
-### 🔹 REStart Project
+Hi! I'm **Paula Rodrigues**, a **Computer Engineer from Portugal** with a strong interest in **software development, data engineering and data-driven applications**.
 
-**End-to-end Data Engineering Pipeline**
+I enjoy transforming ideas into practical solutions and learning through hands-on projects. My background combines software engineering, programming, data processing and web development, allowing me to explore different areas of technology and understand how they connect.
 
-A modular ETL pipeline developed as part of the **[RE]Start Data Engineering Bootcamp**.
+I'm particularly interested in building **useful, reliable and well-structured solutions**, while continuously developing my technical and problem-solving skills.
 
-The project simulates a real-world data engineering solution for processing customer financial data.
+<img align="right" width="330" src="https://c.tenor.com/w3APLkMuTX0AAAAC/computer-work.gif" />
 
-**Highlights:**
+### ♡ A little more about me
 
-- Data extraction and transformation
-- Data cleaning and missing value handling
-- Data profiling and quality validation
-- Automated validation reports
-- Unit testing with Pytest
-- Workflow orchestration with Apache Airflow
-- Docker-based environment
-- Google Cloud Storage integration
-- Execution logging and monitoring
+- 🎓 **Computer Engineering** background
+- 💻 Interested in **Software Development & Data Engineering**
+- 📊 Enjoy working with **data, analytics and data pipelines**
+- 🌐 Interested in **web applications and APIs**
+- ☁️ Exploring **cloud and modern data technologies**
+- 🧪 Interested in **testing, quality and reliable software**
+- 🌱 Always learning through **projects and practical experience**
+- 📍 Based in **Portugal**
+- ✨ Open to opportunities where I can **learn, contribute and grow**
 
-**Technologies:**  
-Python · Pandas · NumPy · Apache Airflow · Docker · Google Cloud Storage · Pytest · Git
-
----
-
-### 🔹 Health Insights
-
-**Healthcare Data Engineering & Analytics**
-
-An end-to-end data engineering project using public healthcare data from **SINASC / DataSUS**.
-
-The project covers the complete flow from data ingestion to transformation, dimensional modelling and interactive visualization.
-
-**Highlights:**
-
-- Public healthcare data ingestion
-- Python-based data processing
-- Snowflake data warehouse
-- dbt transformations
-- Star Schema dimensional modelling
-- Fact and dimension tables
-- Data quality tests
-- Data lineage and documentation
-- Databricks / Snowflake integration
-- Interactive Streamlit dashboard
-
-**Technologies:**  
-Python · SQL · Snowflake · dbt · Databricks · Streamlit · Data Modeling · Git
+<br clear="right"/>
 
 ---
 
-### 🔹 RobDroneGo — Academic Project
+## ✧ My Tech Journey
 
-**Software Engineering Project**
+```javascript
+const paula = {
+    location: "Portugal 🇵🇹",
+    education: "Computer Engineering",
 
-A university project developed around the design and implementation of **RobDroneGo**, a prototype system for managing a fleet of robots and drones.
+    focus: [
+        "Software Development",
+        "Data Engineering",
+        "Data Analysis",
+        "Web Development",
+        "Cloud Technologies"
+    ],
 
-The project was developed in an academic team environment and involved different components of software engineering, including application development, APIs, documentation and project organization.
+    languages: [
+        "Python",
+        "C#",
+        "JavaScript",
+        "TypeScript",
+        "SQL",
+        "C/C++"
+    ],
 
-**Highlights:**
+    technologies: [
+        "Pandas",
+        "NumPy",
+        "dbt",
+        "Snowflake",
+        "Databricks",
+        "Apache Airflow",
+        "Docker",
+        "React",
+        "Streamlit"
+    ],
 
-- Software engineering in a team environment
-- Backend development
-- Frontend development
-- REST APIs
-- Domain modelling
-- Technical documentation
-- Automated pipelines / CI
-- Project organization and version control
+    currentlyLearning: [
+        "Software Engineering",
+        "Data Engineering",
+        "Cloud Technologies",
+        "Software Testing"
+    ],
 
-**Technologies:**  
-C# · .NET · REST APIs · Frontend Development · Git · CI/CD
+    lookingFor: [
+        "IT Internship",
+        "Part-time IT Opportunity",
+        "Junior IT Position"
+    ],
 
-> 🎓 Academic project developed as part of my Computer Engineering degree.
+    philosophy: "Build. Learn. Improve. Repeat. ✦"
+};
+```
 
----
+# ♡ Tech Stack
 
-### 🔹 FL Dashboard
+### 💻 Programming & Software Development
 
-**Interactive Dashboard & Federated Learning**
-
-A project focused on developing an interactive dashboard and supporting infrastructure around a Federated Learning environment.
-
-The project combines frontend development with supporting services and containerized components.
-
-**Highlights:**
-
-- Interactive web interface
-- React frontend
-- Federated Learning environment
-- Docker-based components
-- Integration between different project services
-
-**Technologies:**  
-React · JavaScript/TypeScript · Flower · Docker · Web Development
-
----
-
-## Previous Portfolio
-
-I also have an **older version of my personal CV/portfolio website**, developed during my academic journey.
-
-The project is kept private because the code represents an earlier version of my portfolio, but the website can be shared as an example of my previous web development work.
-
-**View my previous CV / portfolio**
-
----
-
-## What I'm Looking For
-
-I'm currently looking for opportunities that allow me to gain professional experience in the IT field.
-
-I'm particularly interested in:
-
-- Software Development
-- Web Development
-- Data Engineering
-- Data Analysis
-- Software Testing / QA
-- Cloud & Data Technologies
-- IT Internships
-- Part-time IT opportunities
-
-I'm open to learning new technologies and adapting to different development environments.
+ \<p align="center">   \<img src="[https://skillicons.dev/icons?i=python,cs,js,ts,cpp,c,html,css&theme=light](https://skillicons.dev/icons?i=python,cs,js,ts,cpp,c,html,css\&theme=light)" /> \</p> \<p align="center">   \<code>Python\</code>   \<code>C#\</code>   \<code>JavaScript\</code>   \<code>TypeScript\</code>   \<code>C/C++\</code> \</p> 
 
 ---
 
-## Currently Learning
+### 📊 Data & Data Engineering
 
-I'm continuously working on improving my knowledge in areas such as:
-
-- Software Engineering
-- Data Engineering
-- Cloud Technologies
-- Data Analysis
-- Web Development
-- Software Testing
-- Modern development practices
+ \<p align="center">   \<img src="[https://skillicons.dev/icons?i=python,mysql,postgres&theme=light](https://skillicons.dev/icons?i=python,mysql,postgres\&theme=light)" /> \</p> \<p align="center">   \<code>Pandas\</code>   \<code>NumPy\</code>   \<code>SQL\</code>   \<code>dbt\</code>   \<code>Snowflake\</code>   \<code>Databricks\</code> \</p> \<p align="center">   \<code>Data Modeling\</code>   \<code>ETL\</code>   \<code>Data Pipelines\</code>   \<code>Data Quality\</code>   \<code>Analytics\</code> \</p> 
 
 ---
 
-## Let's Connect
+### 🌷 Web & Applications
 
-If you'd like to get in touch, feel free to contact me through:
-
-- LinkedIn
-- Email
+ \<p align="center">   \<img src="[https://skillicons.dev/icons?i=react,html,css,js,ts&theme=light](https://skillicons.dev/icons?i=react,html,css,js,ts\&theme=light)" /> \</p> \<p align="center">   \<code>React\</code>   \<code>Streamlit\</code>   \<code>REST APIs\</code>   \<code>Frontend Development\</code> \</p> 
 
 ---
 
-Thanks for visiting my profile!
+### ☁️ Cloud, DevOps & Tools
+
+ \<p align="center">   \<img src="[https://skillicons.dev/icons?i=docker,gcp,git,github,airflow,vscode&theme=light](https://skillicons.dev/icons?i=docker,gcp,git,github,airflow,vscode\&theme=light)" /> \</p> \<p align="center">   \<code>Docker\</code>   \<code>Google Cloud\</code>   \<code>Apache Airflow\</code>   \<code>CI/CD\</code>   \<code>Git\</code>   \<code>GitHub\</code> \</p> 
+
+---
+
+# ✦ Featured Projects
+
+Here are some of the projects that best represent my experience across **software development, data engineering, analytics and web technologies**.
+
+---
+
+## 🌸 REStart Project
+
+### End-to-End Data Engineering Pipeline
+
+**View Repository →**
+
+A modular **data engineering pipeline** developed as part of the **[RE]Start Data Engineering Bootcamp**, designed to simulate a real-world data engineering workflow for processing and validating customer financial data.
+
+**What I worked with**
+
+-  Data extraction and transformation 
+-  Data cleaning and missing-value handling 
+-  Data profiling and quality validation 
+-  Automated validation reports 
+-  Unit testing with Pytest 
+-  Workflow orchestration with Apache Airflow 
+-  Docker-based development environment 
+-  Google Cloud Storage integration 
+-  Execution logging and monitoring 
+
+**Technologies**
+
+`Python` · `Pandas` · `NumPy` · `Apache Airflow` · `Docker` · `Google Cloud Storage` · `Pytest` · `Git`
+
+---
+
+## 🌷 Health Insights
+
+### Healthcare Data Engineering & Analytics
+
+**View Repository →**
+
+An end-to-end **healthcare data engineering and analytics project** using public healthcare data.
+
+The project explores the complete data journey, from data ingestion and transformation to dimensional modelling, data quality and interactive visualization.
+
+**What I worked with**
+
+-  Public healthcare data ingestion 
+-  Python-based data processing 
+-  Snowflake data warehouse 
+-  dbt transformations 
+-  Star Schema dimensional modelling 
+-  Fact and dimension tables 
+-  Data quality testing 
+-  Data lineage and documentation 
+-  Databricks / Snowflake integration 
+-  Interactive Streamlit dashboard 
+
+**Technologies**
+
+`Python` · `SQL` · `Snowflake` · `dbt` · `Databricks` · `Streamlit` · `Data Modeling` · `Git`
+
+---
+
+## ✧ RobDroneGo
+
+### Software Engineering Academic Project
+
+**View Repository →**
+
+A university **software engineering project** focused on designing and implementing a system for managing a fleet of robots and drones.
+
+Developed collaboratively as part of my **Computer Engineering degree**, with a focus on software architecture, backend development and system integration.
+
+**What I worked with**
+
+-  Team-based software development 
+-  Backend development 
+-  Frontend development 
+-  REST APIs 
+-  Domain modelling 
+-  Technical documentation 
+-  CI/CD 
+-  Version control 
+
+**Technologies**
+
+`C#` · `.NET` · `REST APIs` · `Git` · `CI/CD`
+
+---
+
+## ♡ FL Dashboard
+
+### Federated Learning Dashboard
+
+**View Repository →**
+
+An interactive dashboard developed around a **Federated Learning environment**, combining frontend development with supporting services and containerized components.
+
+**What I worked with**
+
+-  Interactive web interface 
+-  React frontend 
+-  Federated Learning environment 
+-  Docker-based components 
+-  Integration between project services 
+-  Frontend development with TypeScript 
+
+**Technologies**
+
+`React` · `JavaScript` · `TypeScript` · `Flower` · `Docker`
+
+---
+
+# ✿ Other Projects
+
+| ProjectDescription                                        |                                                     |
+| --------------------------------------------------------- | --------------------------------------------------- |
+| **MedicVoice**                                            | Healthcare-focused technology project               |
+| **FinTrack**                                              | Personal finance and financial tracking application |
+| **Weather App**                                           | Weather application using external APIs             |
+| [**T-Rex Runner**](https://wayou.github.io/t-rex-runner/) | Web implementation of the Chrome Dino game          |
+| **Melanie's Smoothies**                                   | Web development project                             |
+| **Mascote Assistente**                                    | Interactive assistant project                       |
+
+---
+
+# 💼 Open to Opportunities
+
+I'm currently looking for an opportunity in **IT** where I can gain professional experience, contribute to real-world projects and continue developing my technical skills.
+
+### I'm particularly interested in
+
+💻 **Software Development**
+
+📊 **Data Engineering**
+
+📈 **Data Analysis**
+
+🌐 **Web Development**
+
+🧪 **Software Testing & QA**
+
+☁️ **Cloud & Data Technologies**
+
+I'm especially interested in **internships, part-time opportunities and junior positions**, including roles that allow me to combine professional development with my current commitments.
+
+📍 **Portugal**
+
+🌍 **Open to remote and hybrid opportunities**
+
+---
+
+# 🌱 Currently Learning
+
+Technology is constantly evolving, so I'm always working on expanding my knowledge.
+
+At the moment, I'm focusing on:
+
+```
+```
+
+```
+Software Engineering
+       ↓
+Data Engineering
+       ↓
+Cloud Technologies
+       ↓
+Data Analysis
+       ↓
+Software Testing
+       ↓
+Web Development
+```
+
+I believe the best way to learn is by **building, experimenting and solving real problems**.
+
+---
+
+# 📊 GitHub Activity
+
+ \<div align="center"> \<img height="170em" src="[https://github-readme-stats.vercel.app/api?username=paula-marisa&show\_icons=true&hide\_border=true&theme=transparent&title\_color=C28FA3&icon\_color=C28FA3&text\_color=755B66](https://github-readme-stats.vercel.app/api?username=paula-marisa\&show_icons=true\&hide_border=true\&theme=transparent\&title_color=C28FA3\&icon_color=C28FA3\&text_color=755B66)" /> \<img height="170em" src="[https://github-readme-stats.vercel.app/api/top-langs/?username=paula-marisa&layout=compact&hide\_border=true&theme=transparent&title\_color=C28FA3&text\_color=755B66](https://github-readme-stats.vercel.app/api/top-langs/?username=paula-marisa\&layout=compact\&hide_border=true\&theme=transparent\&title_color=C28FA3\&text_color=755B66)" /> \</div> 
+
+---
+
+# 🐍 Contribution Garden
+
+ \<div align="center"> 
+
+
+
+ \</div> 
+
+---
+
+# ♡ Let's Connect
+
+I'm always happy to connect with people interested in **technology, software, data, projects and new opportunities**.
+
+ \<div align="center"> \<a href="YOUR\_LINKEDIN\_URL">   \<img src="[https://img.shields.io/badge/LinkedIn-Let](https://img.shields.io/badge/LinkedIn-Let)'s%20Connect-C28FA3?style=for-the-badge&logo=linkedin&logoColor=white" /> \</a> \<a href="mailto\:YOUR\_EMAIL">   \<img src="[https://img.shields.io/badge/Email-Get%20in%20touch-C28FA3?style=for-the-badge&logo=gmail&logoColor=white](https://img.shields.io/badge/Email-Get%20in%20touch-C28FA3?style=for-the-badge\&logo=gmail\&logoColor=white)" /> \</a> \</div> 
+
+---
+
+ \<div align="center"> 
+
+### ✦ Thanks for visiting my profile ✦
+
+*Building, learning and growing — one project at a time.*
+
+ \<br> \<img src="[https://c.tenor.com/w3APLkMuTX0AAAAC/computer-work.gif](https://c.tenor.com/w3APLkMuTX0AAAAC/computer-work.gif)" width="450"> 
+
+\<br>\<br>
+
+♡ · ✦ · ♡ · ✦ · ♡
+
+ \</div> \`\`\` 
+
+### Uma alteração que fiz de propósito
+
+Usei o GIF **duas vezes? Não** — no código acima ele aparece apenas no `About Me` e novamente no final? **Na verdade aparece nos dois locais**, e eu acho que devemos corrigir isso para ficar mais elegante: **eu deixaria o GIF apenas no** **`About Me`**, porque ali funciona como elemento visual junto da apresentação. No final manteria apenas uma pequena assinatura.
+
+Ou seja, substituiria o final por:
+
+```
+```
+
+```
+<div align="center">
+
+### ✦ Thanks for visiting my profile ✦
+
+*Building, learning and growing — one project at a time.*
+
+<br>
+
+♡ · ✦ · ♡ · ✦ · ♡
+
+</div>
+```
+
+
