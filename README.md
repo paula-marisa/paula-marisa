@@ -384,11 +384,11 @@ I'm always happy to connect with people interested in **technology, software, da
 
 <div align="center">
 
-<a href="YOUR_LINKEDIN_URL">
+<a href="https://www.linkedin.com/in/paulasrodrigues/">
   <img src="https://img.shields.io/badge/LinkedIn-Let's%20Connect-C28FA3?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
 
-<a href="mailto:YOUR_EMAIL">
+<a href="mailto:paulamsr@hotmail.com">
   <img src="https://img.shields.io/badge/Email-Get%20in%20touch-C28FA3?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
 
