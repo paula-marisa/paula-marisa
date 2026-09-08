@@ -4,7 +4,7 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com/?font=Montserrat&weight=500&size=21&duration=3000&pause=1000&color=8A657D&center=true&vCenter=true&width=700&lines=Computer+Engineer+%F0%9F%92%BB;Software+Development+%7C+Data+Engineering;Building+software+%26+data-driven+solutions;Always+learning%2C+always+building" />
+<img src="https://readme-typing-svg.herokuapp.com/?font=Montserrat&weight=500&size=21&duration=3000&pause=1200&color=8A657D&center=true&vCenter=true&width=750&lines=Computer+Engineer+%F0%9F%96%A5%EF%B8%8F;Software+%E2%80%A2+Data+%E2%80%A2+Web+%E2%80%A2+Technology+%E2%80%A2+Cybersecurity;Exploring+Different+Areas+of+IT;Always+Learning+%26+Building+%F0%9F%8D%80%F0%9F%A4%9E" />
 
 <br>
 
@@ -26,27 +26,32 @@
 
 ---
 
+---
+
 ## ✦ About Me
 
-Hi! I'm **Paula Rodrigues**, a **Computer Engineer from Portugal** with a strong interest in **software development, data engineering and data-driven applications**.
+Hi! I'm **Paula Rodrigues**, a **Computer Engineer from Portugal** with an academic and professional background in both **technology and biomedical sciences**.
 
-I enjoy transforming ideas into practical solutions and learning through hands-on projects. My background combines software engineering, programming, data processing and web development, allowing me to explore different areas of technology and understand how they connect.
+I hold a **Bachelor's degree in Clinical Analysis and Public Health** and currently work as a **Biomedical Scientist in Clinical Analysis and Public Health** at a public hospital in Portugal. In 2024, I completed a second bachelor's degree in **Computer Engineering at ISEP – Instituto Superior de Engenharia do Porto**, driven by my interest in technology and my desire to build a career in IT.
 
-I'm particularly interested in building **useful, reliable and well-structured solutions**, while continuously developing my technical and problem-solving skills.
+Since graduating in Computer Engineering, I've continued developing my technical skills through **courses, bootcamps, conferences, a hackathon and personal projects**. These experiences have allowed me to put what I've learned into practice while exploring different areas of IT and discovering where I would like to grow professionally.
+
+I'm now looking for an opportunity to **transition into IT**, gain my first professional experience in the field and learn how technology teams work in a real-world environment. I'm looking for a place where I can **learn, contribute and gradually build my career in technology**, while bringing the experience and perspective I've gained from working in healthcare.
 
 <img align="right" width="330" src="https://c.tenor.com/w3APLkMuTX0AAAAC/computer-work.gif" />
 
 ### ♡ A little more about me
 
-- 🎓 **Computer Engineering** background
-- 💻 Interested in **Software Development & Data Engineering**
-- 📊 Enjoy working with **data, analytics and data pipelines**
-- 🌐 Interested in **web applications and APIs**
-- ☁️ Exploring **cloud and modern data technologies**
-- 🧪 Interested in **testing, quality and reliable software**
-- 🌱 Always learning through **projects and practical experience**
-- 📍 Based in **Portugal**
-- ✨ Open to opportunities where I can **learn, contribute and grow**
+- 🎓 **BSc in Computer Engineering** — ISEP, completed in 2024
+- 🧬 **BSc in Clinical Analysis and Public Health**
+- 🏥 Currently working as a **Biomedical Scientist** in a public hospital in Portugal
+- 💻 Building **personal projects** to apply and strengthen my IT skills
+- 📚 Continuously learning through **courses and bootcamps**
+- 🧩 Participated in **a hackathon and technology conferences**
+- 🔎 Exploring **different areas of IT**
+- 🔄 Looking for my **first professional opportunity in IT**
+- 🌱 Interested in learning through **real-world experience**
+- ✨ Looking for an opportunity to **learn, contribute and grow**
 
 <br clear="right"/>
 
