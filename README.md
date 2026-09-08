@@ -26,8 +26,6 @@
 
 ---
 
----
-
 ## ✦ About Me
 
 Hi! I'm **Paula Rodrigues**, a **Computer Engineer from Portugal** with an academic and professional background in both **technology and biomedical sciences**.
