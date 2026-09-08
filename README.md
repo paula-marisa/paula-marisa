@@ -11,7 +11,7 @@
 <a href="https://www.linkedin.com/in/paulasrodrigues">
   <img src="https://img.shields.io/badge/LinkedIn-Connect-C28FA3?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
-<a href="YOUR_PORTFOLIO_URL">
+<a href="https://paularodrigues.onrender.com/">
   <img src="https://img.shields.io/badge/Portfolio-Visit-C28FA3?style=for-the-badge&logo=google-chrome&logoColor=white" />
 </a>
 <a href="https://github.com/paula-marisa">
