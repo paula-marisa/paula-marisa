@@ -30,7 +30,7 @@
 
 Hi! I'm **Paula Rodrigues**, a **Computer Engineer from Portugal** with an academic and professional background in both **technology and biomedical sciences**.
 
-I hold a **Bachelor's degree in Clinical Analysis and Public Health** and currently work as a **Biomedical Scientist** at a public hospital in Portugal. In 2024, I completed a second bachelor's degree in **Computer Engineering at ISEP – Instituto Superior de Engenharia do Porto**, driven by my interest in technology and my desire to build a career in IT.
+I hold a **Bachelor's degree in Clinical Analysis and Public Health** and currently work as a **Biomedical Scientist** at a hospital in Portugal. In 2024, I completed a second bachelor's degree in **Computer Engineering at ISEP – Instituto Superior de Engenharia do Porto**, driven by my interest in technology and my desire to build a career in IT.
 
 Since graduating in Computer Engineering, I've continued developing my technical skills through **courses, bootcamps, conferences, a hackathon and personal projects**. These experiences have allowed me to put what I've learned into practice while exploring different areas of IT and discovering where I would like to grow professionally.
 
@@ -41,8 +41,8 @@ I'm now looking for an opportunity to **transition into IT**, gain my first prof
 ### ♡ A little more about me
 
 - 🎓 **BSc in Computer Engineering** — ISEP, completed in 2024
-- 🧬 **BSc in Clinical Analysis and Public Health** — ESTSP, completed in 2014
-- 🏥 Currently working as a **Biomedical Scientist** in a public hospital in Portugal
+- 🎓 **BSc in Clinical Analysis and Public Health** — ESTSP, completed in 2014
+- 🧪 Currently working as a **Biomedical Scientist** in a hospital in Portugal
 - 💻 Building **personal projects** to apply and strengthen my IT skills
 - 📚 Continuously learning through **courses and bootcamps**
 - 🧩 Participated in **a hackathon and technology conferences**
