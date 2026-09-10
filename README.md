@@ -28,7 +28,7 @@
 
 ---
 
-## ✦ About Me
+##  ๋࣭ ⭑⚝ About Me
 
 Hi! I'm **Paula Rodrigues**, a **Computer Engineer from Portugal** with an academic and professional background in both **technology and biomedical sciences**.
 
@@ -40,22 +40,22 @@ I'm now looking to **transition into IT** and gain my first professional experie
 
 <img align="right" width="330" src="https://c.tenor.com/w3APLkMuTX0AAAAC/computer-work.gif" />
 
-### ♡ A little more about me
+### ✌︎㋡ A little more about me
 
-- 🎓 **BSc in Computer Engineering** — ISEP, completed in 2024
-- 🧬 **BSc in Clinical Analysis and Public Health** — ESTSP, completed in 2014
-- 🧪 Currently working as a **Biomedical Scientist** at a hospital in Portugal
-- 💻 Building **personal projects** to strengthen my IT skills
-- 📚 Continuously learning through **courses and bootcamps**
-- 🧩 Participated in **a hackathon and technology conferences**
-- 🔎 Exploring **different areas of IT**
-- 🔄 Looking for my **first professional opportunity in IT**
+- 👩🏻‍💻 **BSc in Computer Engineering** — ISEP, completed in 2024
+- 👩🏻‍💻 **BSc in Clinical Analysis and Public Health** — ESTSP, completed in 2014
+- 👩🏻‍💻 Currently working as a **Biomedical Scientist** at a hospital in Portugal
+- 👩🏻‍💻 Building **personal projects** to strengthen my IT skills
+- 👩🏻‍💻 Continuously learning through **courses and bootcamps**
+- 👩🏻‍💻 Participated in **a hackathon and technology conferences**
+- 👩🏻‍💻 Exploring **different areas of IT**
+- 👩🏻‍💻 Looking for my **first professional opportunity in IT**
 
 <br clear="right"/>
 
 ---
 
-## ✧ My Tech Journey
+##  ๋࣭ ⭑⚝ My Tech Journey
 
 ```javascript
 const paula = {
@@ -138,9 +138,9 @@ const paula = {
 
 ---
 
-# ♡ Tech Stack
+##  ๋࣭ ⭑⚝ Tech Stack
 
-### 💻 Programming Languages
+### ✎ᝰ Programming Languages
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=java,python,js,ts,dart&theme=light" />
@@ -158,7 +158,7 @@ const paula = {
 
 ---
 
-### 🗄️ Data & Databases
+### ✎ᝰ Data & Databases
 
 <p align="center">
   <code>SQL</code>
@@ -169,9 +169,10 @@ const paula = {
   <code>Databricks</code>
   <code>Apache Airflow</code>
 </p>
+
 ---
 
-### 🌷 Web & Application Development
+### ✎ᝰ Web & Application Development
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=angular,react,html,css&theme=light" />
@@ -187,7 +188,7 @@ const paula = {
 
 ---
 
-### 🧪 Testing
+### ✎ᝰ Testing
 
 <p align="center">
   <code>Pytest</code>
@@ -196,7 +197,7 @@ const paula = {
 
 ---
 
-### ☁️ Cloud & Tools
+### ✎ᝰ Cloud & Tools
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=gcp,docker,git,github,vscode&theme=light" />
@@ -212,15 +213,15 @@ const paula = {
 
 ---
 
-# ✦ Featured Projects
+##  ๋࣭ ⭑⚝ Featured Projects
 
 A selection of **academic and personal projects** that reflect my experience exploring different areas of IT.
 
 ---
 
-## 🌸 REStart Project
+### ✎ᝰ REStart Project
 
-### End-to-End Data Engineering Pipeline
+#### End-to-End Data Engineering Pipeline
 
 [**View Repository →**](https://github.com/paula-marisa/REStart_Project)
 
@@ -243,9 +244,9 @@ An end-to-end **data engineering project** developed during the **[RE]Start Data
 
 ---
 
-## 🌷 Health Insights
+### ✎ᝰ Health Insights
 
-### Healthcare Data Engineering & Analytics
+#### Healthcare Data Engineering & Analytics
 
 [**View Repository →**](https://github.com/paula-marisa/health_insights)
 
@@ -268,15 +269,15 @@ An **end-to-end data engineering and analytics project** using public healthcare
 
 ---
 
-## ✧ RobDroneGo
+### ✎ᝰ RobDroneGo
 
-### Software Engineering Academic Project
+#### Software Engineering Academic Project
 
 [**View Repository →**](https://github.com/paula-marisa/Sem5pi-23-24-77)
 
 A **team-based software engineering project** developed during my Computer Engineering degree, focused on managing a fleet of robots and drones.
 
-The project provided experience across **web application development, backend services, database integration, testing and software delivery practices**.
+The project explores business questions through **data preparation, exploratory analysis, modelling and visualization**.
 
 **Technologies**
 
@@ -284,9 +285,9 @@ The project provided experience across **web application development, backend se
 
 ---
 
-## 📊 triggo.ai
+### ✎ᝰ triggo.ai
 
-### Data Analysis & Data Science
+#### Data Analysis & Data Science
 
 [**View Repository →**](https://github.com/paula-marisa/triggo.ai)
 
@@ -300,9 +301,9 @@ The project explores business questions through **data preparation, exploratory 
 
 --- 
 
-## ♡ FL Dashboard
+### ✎ᝰ FL Dashboard
 
-### Federated Learning Dashboard
+#### Federated Learning Dashboard
 
 [**View Repository →**](https://github.com/paula-marisa/FL_Dashboard)
 
@@ -324,7 +325,9 @@ A university project exploring an interactive dashboard for a **Federated Learni
 
 ---
 
-# ✿ Other Projects
+## ◡̈ Other Projects
+
+<img align="right" width="200" src="https://github.com/paula-marisa/paula-marisa/blob/main/pngwing.com.png">
 
 | Project | Description |
 |:---|:---|
@@ -335,27 +338,29 @@ A university project exploring an interactive dashboard for a **Federated Learni
 | [**Melanie's Smoothies**](https://github.com/paula-marisa/melanies_smoothies) | Web development project |
 | [**Mascote Assistente**](https://github.com/paula-marisa/mascote-assistente) | Interactive assistant application |
 
+<br clear="right"/>
+
 ---
 
-# 💼 Open to Opportunities
+##  ๋࣭ ⭑⚝ Open to Opportunities
 
 I'm currently looking for an opportunity to **transition into IT**, gain professional experience and contribute to real-world projects.
 
 ### Areas I'm interested in exploring
 
-💻 **Software Development**
+👩🏻‍💻 **Software Development**
 
-📊 **Data Engineering & Data Analysis**
+👩🏻‍💻 **Data Engineering & Data Analysis**
 
-🌐 **Web Development**
+👩🏻‍💻 **Web Development**
 
-🧪 **Software Testing & QA**
+👩🏻‍💻 **Software Testing & QA**
 
-🌐 **Computer Networks**
+👩🏻‍💻 **Computer Networks**
 
-🔐 **Cybersecurity**
+👩🏻‍💻 **Cybersecurity**
 
-☁️ **Cloud Technologies**
+👩🏻‍💻 **Cloud Technologies**
 
 I'm particularly interested in **internships, part-time opportunities and entry-level positions**.
 
@@ -365,7 +370,7 @@ I'm particularly interested in **internships, part-time opportunities and entry-
 
 ---
 
-# 🧑🏻‍💻 Currently Learning
+##  ๋࣭ ⭑⚝ Currently Learning
 
 I'm currently focusing on strengthening my skills in **Python, software development and data technologies**.
 
@@ -373,7 +378,7 @@ I believe the best way to learn is by **building, experimenting and solving real
 
 ---
 
-# ♡ Let's Connect
+##  ๋࣭ ⭑⚝ Let's Connect
 
 I'm always happy to connect with people interested in **technology, software, data, projects and new opportunities**.
 
