@@ -34,9 +34,9 @@ Hi! I'm **Paula Rodrigues**, a **Computer Engineer from Portugal** with an acade
 
 I hold a **Bachelor's degree in Clinical Analysis and Public Health** and currently work as a **Biomedical Scientist at a hospital in Portugal**. In 2024, I completed a second bachelor's degree in **Computer Engineering at ISEP – Instituto Superior de Engenharia do Porto**, driven by my interest in technology and my desire to build a career in IT.
 
-Since graduating in Computer Engineering, I've continued developing my technical skills through **courses, bootcamps, conferences, a hackathon and personal projects**. These experiences have allowed me to put what I've learned into practice while exploring different areas of IT and discovering where I would like to grow professionally.
+Since graduating in Computer Engineering, I've continued developing my technical skills through **courses, bootcamps, conferences, a hackathon and personal projects**. These experiences have helped me apply what I've learned and explore different areas of IT.
 
-I'm now looking for an opportunity to **transition into IT**, gain my first professional experience in the field and learn how technology teams work in a real-world environment. I'm particularly interested in **internships, part-time positions and other entry-level opportunities** that allow me to continue learning while contributing to real-world projects.
+I'm now looking to **transition into IT** and gain my first professional experience in the field. I'm particularly interested in **internships, part-time positions and other entry-level opportunities** where I can learn, contribute and grow professionally.
 
 <img align="right" width="330" src="https://c.tenor.com/w3APLkMuTX0AAAAC/computer-work.gif" />
 
@@ -45,12 +45,11 @@ I'm now looking for an opportunity to **transition into IT**, gain my first prof
 - 🎓 **BSc in Computer Engineering** — ISEP, completed in 2024
 - 🧬 **BSc in Clinical Analysis and Public Health** — ESTSP, completed in 2014
 - 🧪 Currently working as a **Biomedical Scientist** at a hospital in Portugal
-- 💻 Building **personal projects** to apply and strengthen my IT skills
+- 💻 Building **personal projects** to strengthen my IT skills
 - 📚 Continuously learning through **courses and bootcamps**
 - 🧩 Participated in **a hackathon and technology conferences**
 - 🔎 Exploring **different areas of IT**
 - 🔄 Looking for my **first professional opportunity in IT**
-- 🌱 Interested in **gaining real-world experience and contributing**
 
 <br clear="right"/>
 
@@ -91,12 +90,17 @@ const paula = {
         "SQL"
     ],
 
-    frameworksAndLibraries: [
-        "Angular",
-        "React",
-        "Pandas",
-        "NumPy"
-    ],
+    frameworksAndLibraries: {
+        frameworks: [
+            "Angular"
+        ],
+
+        libraries: [
+            "React",
+            "Pandas",
+            "NumPy"
+        ]
+    },
 
     platformsAndTools: [
         "OutSystems",
@@ -105,11 +109,13 @@ const paula = {
         "Databricks",
         "Apache Airflow",
         "Docker",
+        "Pytest",
+        "Cypress",
         "Git",
         "GitHub"
     ],
 
-    experience: [
+    background: [
         "Academic Projects",
         "Personal Projects",
         "Courses & Bootcamps",
@@ -155,10 +161,6 @@ const paula = {
 ### 🗄️ Data & Databases
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=mysql,postgres&theme=light" />
-</p>
-
-<p align="center">
   <code>SQL</code>
   <code>Pandas</code>
   <code>NumPy</code>
@@ -167,7 +169,6 @@ const paula = {
   <code>Databricks</code>
   <code>Apache Airflow</code>
 </p>
-
 ---
 
 ### 🌷 Web & Application Development
@@ -186,15 +187,24 @@ const paula = {
 
 ---
 
-### ☁️ Tools & Technologies
+### 🧪 Testing
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=docker,gcp,git,github,vscode&theme=light" />
+  <code>Pytest</code>
+  <code>Cypress</code>
+</p>
+
+---
+
+### ☁️ Cloud & Tools
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=gcp,docker,git,github,vscode&theme=light" />
 </p>
 
 <p align="center">
+  <code>Google Cloud Storage</code>
   <code>Docker</code>
-  <code>Google Cloud</code>
   <code>Git</code>
   <code>GitHub</code>
   <code>VS Code</code>
@@ -204,7 +214,8 @@ const paula = {
 
 # ✦ Featured Projects
 
-A selection of projects that represent my **academic and personal experience across software development, data engineering, data analysis and web technologies**.
+A selection of **academic and personal projects** that reflect my experience exploring different areas of IT.
+
 ---
 
 ## 🌸 REStart Project
@@ -213,7 +224,7 @@ A selection of projects that represent my **academic and personal experience acr
 
 [**View Repository →**](https://github.com/paula-marisa/REStart_Project)
 
-An end-to-end **data engineering project developed** as part of the **[RE]Start Data Engineering Bootcamp**, implementing a modular ETL pipeline for cleaning, validating, transforming and processing customer financial data.
+An end-to-end **data engineering project** developed during the **[RE]Start Data Engineering Bootcamp**, focused on building a modular ETL pipeline for customer financial data.
 
 **Key areas**
 
@@ -275,23 +286,13 @@ The project provided experience across **web application development, backend se
 
 ## 📊 triggo.ai
 
-### Data Analysis & Machine Learning
+### Data Analysis & Data Science
 
 [**View Repository →**](https://github.com/paula-marisa/triggo.ai)
 
 A data analysis project based on the **Olist Brazilian E-commerce dataset**, developed as part of a technical challenge focused on Data Engineering and DataOps.
 
-The project explores business questions through **data preparation, exploratory analysis, machine learning and interactive data visualization**.
-
-**Key areas**
-
-- Data cleaning and preparation
-- Exploratory data analysis
-- SQL and Python-based analysis
-- Customer segmentation
-- Classification
-- Business-oriented data insights
-- Data visualization
+The project explores business questions through **data preparation, exploratory analysis, data analysis, modelling and visualization**.
 
 **Technologies**
 
@@ -305,7 +306,7 @@ The project explores business questions through **data preparation, exploratory 
 
 [**View Repository →**](https://github.com/paula-marisa/FL_Dashboard)
 
-An interactive dashboard developed around a **Federated Learning environment**, combining a web interface with supporting project components.
+A university project exploring an interactive dashboard for a **Federated Learning environment**, combining a web interface with supporting project components.
 
 **Key areas**
 
@@ -327,7 +328,7 @@ An interactive dashboard developed around a **Federated Learning environment**, 
 
 | Project | Description |
 |:---|:---|
-| [**MedicVoice**](https://github.com/paula-marisa/MedicVoice) | Healthcare-focused technology project |
+| [**MedicVoice**](https://github.com/paula-marisa/MedicVoice) | Healthcare-focused full-stack web application |
 | [**FinTrack**](https://github.com/paula-marisa/fintrack) | Personal finance application |
 | [**Weather App**](https://github.com/paula-marisa/weather_app) | Weather application developed with Flutter |
 | [**1stPortfolio**](https://github.com/paula-marisa/1stPortfolio) | Personal portfolio web project |
@@ -366,7 +367,7 @@ I'm particularly interested in **internships, part-time opportunities and entry-
 
 # 🧑🏻‍💻 Currently Learning
 
-I'm currently focusing on strengthening my skills in **Python, software development and data-related technologies**.
+I'm currently focusing on strengthening my skills in **Python, software development and data technologies**.
 
 I believe the best way to learn is by **building, experimenting and solving real problems**.
 
@@ -394,7 +395,7 @@ I'm always happy to connect with people interested in **technology, software, da
 
 ### ✦ Thanks for visiting my profile ✦
 
-*Building, learning and growing - one project at a time.*
+**Learning, building and growing — one project at a time.**
 
 <br>
 
