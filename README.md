@@ -77,11 +77,15 @@ const paula = {
 
     programmingLanguages: [
         "Java",
+        "Python",
         "JavaScript",
         "TypeScript",
-        "SQL",
-        "Python",
+        "R",
         "Assembly"
+    ],
+
+    queryLanguages: [
+        "SQL"
     ],
 
     frameworksLibrariesAndPlatforms: [
@@ -90,13 +94,16 @@ const paula = {
         "OutSystems"
     ],
 
-    technologiesExplored: [
+    dataTechnologies: [
         "Pandas",
         "NumPy",
         "dbt",
         "Snowflake",
         "Databricks",
-        "Apache Airflow",
+        "Apache Airflow"
+    ],
+
+    otherTechnologiesAndTools: [
         "Docker"
     ],
 
@@ -125,104 +132,100 @@ const paula = {
 
 # ♡ Tech Stack
 
-### 💻 Programming & Software Development
+### 💻 Programming Languages
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,cs,js,ts,cpp,c,html,css&theme=light" />
+  <img src="https://skillicons.dev/icons?i=java,python,js,ts&theme=light" />
 </p>
 
 <p align="center">
+  <code>Java</code>
   <code>Python</code>
-  <code>C#</code>
   <code>JavaScript</code>
   <code>TypeScript</code>
-  <code>C/C++</code>
+  <code>R</code>
+  <code>Assembly</code>
 </p>
 
 ---
 
-### 📊 Data & Data Engineering
+### 🗄️ Data & Databases
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,mysql,postgres&theme=light" />
+  <img src="https://skillicons.dev/icons?i=mysql,postgres&theme=light" />
 </p>
 
 <p align="center">
+  <code>SQL</code>
   <code>Pandas</code>
   <code>NumPy</code>
-  <code>SQL</code>
   <code>dbt</code>
   <code>Snowflake</code>
   <code>Databricks</code>
-</p>
-
-<p align="center">
-  <code>Data Modeling</code>
-  <code>ETL</code>
-  <code>Data Pipelines</code>
-  <code>Data Quality</code>
-  <code>Analytics</code>
+  <code>Apache Airflow</code>
 </p>
 
 ---
 
-### 🌷 Web & Applications
+### 🌷 Web & Application Development
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=react,html,css,js,ts&theme=light" />
+  <img src="https://skillicons.dev/icons?i=angular,react,html,css,js,ts&theme=light" />
 </p>
 
 <p align="center">
+  <code>Angular</code>
   <code>React</code>
-  <code>Streamlit</code>
-  <code>REST APIs</code>
-  <code>Frontend Development</code>
+  <code>OutSystems</code>
+  <code>HTML</code>
+  <code>CSS</code>
+  <code>JavaScript</code>
+  <code>TypeScript</code>
 </p>
 
 ---
 
-### ☁️ Cloud, DevOps & Tools
+### ☁️ Cloud, DevOps & Development Tools
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=docker,gcp,git,github,airflow,vscode&theme=light" />
+  <img src="https://skillicons.dev/icons?i=docker,gcp,git,github,vscode&theme=light" />
 </p>
 
 <p align="center">
   <code>Docker</code>
   <code>Google Cloud</code>
-  <code>Apache Airflow</code>
-  <code>CI/CD</code>
   <code>Git</code>
   <code>GitHub</code>
+  <code>VS Code</code>
 </p>
 
 ---
 
 # ✦ Featured Projects
 
-Here are some of the projects that best represent my experience across **software development, data engineering, analytics and web technologies**.
+A selection of projects that represent my academic and personal experience across **software development, data, analytics and web technologies**.
 
 ---
 
 ## 🌸 REStart Project
 
-### End-to-End Data Engineering Pipeline
+### Data Engineering Pipeline
 
 [**View Repository →**](https://github.com/paula-marisa/REStart_Project)
 
-A modular **data engineering pipeline** developed as part of the **[RE]Start Data Engineering Bootcamp**, designed to simulate a real-world data engineering workflow for processing and validating customer financial data.
+A **data engineering project** developed as part of the **[RE]Start Data Engineering Bootcamp**, focused on building a pipeline for processing, transforming and validating customer financial data.
 
 **What I worked with**
 
 - Data extraction and transformation
 - Data cleaning and missing-value handling
-- Data profiling and quality validation
+- Data profiling and data quality validation
 - Automated validation reports
 - Unit testing with Pytest
-- Workflow orchestration with Apache Airflow
-- Docker-based development environment
-- Google Cloud Storage integration
-- Execution logging and monitoring
+- Workflow orchestration
+- Containerized development environment
+- Cloud storage integration
+- Logging and monitoring
 
 **Technologies**
 
@@ -236,26 +239,23 @@ A modular **data engineering pipeline** developed as part of the **[RE]Start Dat
 
 [**View Repository →**](https://github.com/paula-marisa/health_insights)
 
-An end-to-end **healthcare data engineering and analytics project** using public healthcare data.
-
-The project explores the complete data journey, from data ingestion and transformation to dimensional modelling, data quality and interactive visualization.
+An **end-to-end data project** using public healthcare data, exploring the process from data ingestion and transformation to data modelling, quality validation and visualization.
 
 **What I worked with**
 
 - Public healthcare data ingestion
 - Python-based data processing
-- Snowflake data warehouse
-- dbt transformations
-- Star Schema dimensional modelling
+- Data transformation
+- Data warehouse development
+- Dimensional modelling
 - Fact and dimension tables
 - Data quality testing
 - Data lineage and documentation
-- Databricks / Snowflake integration
-- Interactive Streamlit dashboard
+- Integration between data platforms
 
 **Technologies**
 
-`Python` · `SQL` · `Snowflake` · `dbt` · `Databricks` · `Streamlit` · `Data Modeling` · `Git`
+`Python` · `SQL` · `Snowflake` · `dbt` · `Databricks` · `Data Modeling` · `Git`
 
 ---
 
@@ -265,24 +265,22 @@ The project explores the complete data journey, from data ingestion and transfor
 
 [**View Repository →**](https://github.com/paula-marisa/Sem5pi-23-24-77)
 
-A university **software engineering project** focused on designing and implementing a system for managing a fleet of robots and drones.
+A collaborative **software engineering project** developed as part of my Computer Engineering degree, focused on designing and implementing a system for managing a fleet of robots and drones.
 
-Developed collaboratively as part of my **Computer Engineering degree**, with a focus on software architecture, backend development and system integration.
+The project involved working as part of a team throughout the development process, from system design and implementation to documentation and version control.
 
-**What I worked with**
+**Project experience**
 
 - Team-based software development
-- Backend development
-- Frontend development
-- REST APIs
+- Software design and architecture
 - Domain modelling
+- Backend and application development
 - Technical documentation
-- CI/CD
 - Version control
 
 **Technologies**
 
-`C#` · `.NET` · `REST APIs` · `Git` · `CI/CD`
+`C#` · `.NET` · `Git`
 
 ---
 
@@ -292,16 +290,17 @@ Developed collaboratively as part of my **Computer Engineering degree**, with a 
 
 [**View Repository →**](https://github.com/paula-marisa/FL_Dashboard)
 
-An interactive dashboard developed around a **Federated Learning environment**, combining frontend development with supporting services and containerized components.
+An interactive dashboard developed around a **Federated Learning environment**, combining a web interface with supporting project components.
 
 **What I worked with**
 
 - Interactive web interface
-- React frontend
-- Federated Learning environment
-- Docker-based components
-- Integration between project services
-- Frontend development with TypeScript
+- Frontend development
+- React
+- TypeScript
+- JavaScript
+- Integration between project components
+- Containerized development environment
 
 **Technologies**
 
@@ -314,7 +313,7 @@ An interactive dashboard developed around a **Federated Learning environment**, 
 | Project | Description |
 |:---|:---|
 | [**MedicVoice**](https://github.com/paula-marisa/MedicVoice) | Healthcare-focused technology project |
-| [**FinTrack**](https://github.com/paula-marisa/fintrack) | Personal finance and financial tracking application |
+| [**FinTrack**](https://github.com/paula-marisa/fintrack) | Personal finance tracking application |
 | [**Weather App**](https://github.com/paula-marisa/weather_app) | Weather application using external APIs |
 | [**T-Rex Runner**](https://wayou.github.io/t-rex-runner/) | Web implementation of the Chrome Dino game |
 | [**Melanie's Smoothies**](https://github.com/paula-marisa/melanies_smoothies) | Web development project |
@@ -324,15 +323,13 @@ An interactive dashboard developed around a **Federated Learning environment**, 
 
 # 💼 Open to Opportunities
 
-I'm currently looking for an opportunity in **IT** where I can gain professional experience, contribute to real-world projects and continue developing my technical skills.
+I'm currently looking for my **first professional opportunity in IT**, where I can gain real-world experience, contribute to a team and continue developing my technical skills.
 
-### I'm particularly interested in
+### Areas I'm interested in exploring
 
 💻 **Software Development**
 
-📊 **Data Engineering**
-
-📈 **Data Analysis**
+📊 **Data Engineering & Data Analysis**
 
 🌐 **Web Development**
 
@@ -340,7 +337,7 @@ I'm currently looking for an opportunity in **IT** where I can gain professional
 
 ☁️ **Cloud & Data Technologies**
 
-I'm especially interested in **internships, part-time opportunities and junior positions**, including roles that allow me to combine professional development with my current commitments.
+I'm particularly interested in **internships, part-time opportunities and junior positions** that allow me to grow professionally while continuing my transition into IT.
 
 📍 **Portugal**
 
@@ -350,47 +347,17 @@ I'm especially interested in **internships, part-time opportunities and junior p
 
 # 🌱 Currently Learning
 
-Technology is constantly evolving, so I'm always working on expanding my knowledge.
+I'm currently continuing to strengthen my technical foundations while exploring different areas of IT.
 
 At the moment, I'm focusing on:
 
-```text
-Software Engineering
-       ↓
-Data Engineering
-       ↓
-Cloud Technologies
-       ↓
-Data Analysis
-       ↓
-Software Testing
-       ↓
-Web Development
-```
+🐍 **Python**
 
-I believe the best way to learn is by **building, experimenting and solving real problems**.
+💻 **Software Development**
 
----
+📊 **Data & Data Engineering**
 
-# 📊 GitHub Activity
-
-<div align="center">
-
-<img height="170em" src="https://github-readme-stats.vercel.app/api?username=paula-marisa&show_icons=true&hide_border=true&theme=transparent&title_color=C28FA3&icon_color=C28FA3&text_color=755B66" />
-
-<img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=paula-marisa&layout=compact&hide_border=true&theme=transparent&title_color=C28FA3&text_color=755B66" />
-
-</div>
-
----
-
-# 🐍 Contribution Garden
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/paula-marisa/paula-marisa/output/github-contribution-grid-snake.svg" alt="GitHub contribution snake animation" />
-
-</div>
+I believe the best way to learn is by **building, experimenting and solving problems**.
 
 ---
 
