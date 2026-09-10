@@ -30,26 +30,25 @@
 
 Hi! I'm **Paula Rodrigues**, a **Computer Engineer from Portugal** with an academic and professional background in both **technology and biomedical sciences**.
 
-I hold a **Bachelor's degree in Clinical Analysis and Public Health** and currently work as a **Biomedical Scientist** at a hospital in Portugal. In 2024, I completed a second bachelor's degree in **Computer Engineering at ISEP – Instituto Superior de Engenharia do Porto**, driven by my interest in technology and my desire to build a career in IT.
+I hold a **Bachelor's degree in Clinical Analysis and Public Health** and currently work as a **Biomedical Scientist at a hospital in Portugal**. In 2024, I completed a second bachelor's degree in **Computer Engineering at ISEP – Instituto Superior de Engenharia do Porto**, driven by my interest in technology and my desire to build a career in IT.
 
 Since graduating in Computer Engineering, I've continued developing my technical skills through **courses, bootcamps, conferences, a hackathon and personal projects**. These experiences have allowed me to put what I've learned into practice while exploring different areas of IT and discovering where I would like to grow professionally.
 
-I'm now looking for an opportunity to **transition into IT**, gain my first professional experience in the field and learn how technology teams work in a real-world environment. **Initially, I'm particularly interested in opportunities that allow me to combine my current professional role with the beginning of my career in IT, such as part-time positions, internships or other flexible entry-level opportunities.** My goal is to **learn, contribute and gradually build my career in technology**, while bringing the experience and perspective I've gained from working in healthcare.
+I'm now looking for an opportunity to **transition into IT**, gain my first professional experience in the field and learn how technology teams work in a real-world environment. **Initially, I'm particularly interested in opportunities that allow me to combine my current professional role with the beginning of my career in IT, such as part-time positions, internships or other flexible entry-level opportunities.** My goal is to **learn, contribute and gradually build my career in technology**.
 
 <img align="right" width="330" src="https://c.tenor.com/w3APLkMuTX0AAAAC/computer-work.gif" />
 
 ### ♡ A little more about me
 
 - 🎓 **BSc in Computer Engineering** — ISEP, completed in 2024
-- 🎓 **BSc in Clinical Analysis and Public Health** — ESTSP, completed in 2014
-- 🧪 Currently working as a **Biomedical Scientist** in a hospital in Portugal
+- 🧬 **BSc in Clinical Analysis and Public Health** — ESTSP, completed in 2014
+- 🧪 Currently working as a **Biomedical Scientist** at a hospital in Portugal
 - 💻 Building **personal projects** to apply and strengthen my IT skills
 - 📚 Continuously learning through **courses and bootcamps**
 - 🧩 Participated in **a hackathon and technology conferences**
 - 🔎 Exploring **different areas of IT**
 - 🔄 Looking for my **first professional opportunity in IT**
-- 🌱 Interested in learning through **real-world experience**
-- ✨ Looking for an opportunity to **learn, contribute and grow**
+- 🌱 Interested in **gaining real-world experience and contributing**
 
 <br clear="right"/>
 
@@ -60,51 +59,65 @@ I'm now looking for an opportunity to **transition into IT**, gain my first prof
 ```javascript
 const paula = {
     location: "Portugal 🇵🇹",
-    education: "Computer Engineering",
 
-    focus: [
+    education: [
+        "BSc in Computer Engineering",
+        "BSc in Clinical Analysis and Public Health"
+    ],
+
+    areasExplored: [
         "Software Development",
         "Data Engineering",
         "Data Analysis",
         "Web Development",
-        "Cloud Technologies"
+        "Computer Networks",
+        "Cloud Technologies",
+        "Cybersecurity"
     ],
 
-    languages: [
-        "Python",
-        "C#",
+    programmingLanguages: [
+        "Java",
         "JavaScript",
         "TypeScript",
         "SQL",
-        "C/C++"
+        "Python",
+        "Assembly"
     ],
 
-    technologies: [
+    frameworksLibrariesAndPlatforms: [
+        "Angular",
+        "React",
+        "OutSystems"
+    ],
+
+    technologiesExplored: [
         "Pandas",
         "NumPy",
         "dbt",
         "Snowflake",
         "Databricks",
         "Apache Airflow",
-        "Docker",
-        "React",
-        "Streamlit"
+        "Docker"
+    ],
+
+    experience: [
+        "Academic Projects",
+        "Personal Projects",
+        "Courses & Bootcamps",
+        "Hackathons"
     ],
 
     currentlyLearning: [
-        "Software Engineering",
-        "Data Engineering",
-        "Cloud Technologies",
-        "Software Testing"
+        "Python"
     ],
 
     lookingFor: [
         "IT Internship",
         "Part-time IT Opportunity",
-        "Junior IT Position"
+        "Entry-Level IT Opportunity"
     ],
 
-    philosophy: "Build. Learn. Improve. Repeat. ✦"
+    philosophy: "Build. Learn. Improve. Repeat. ✮"
 };
 ```
 
