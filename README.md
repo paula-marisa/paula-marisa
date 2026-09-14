@@ -374,6 +374,7 @@ I'm also open to opportunities involving **Software Testing & QA, Computer Netwo
 I'm especially interested in teams where I can **learn from experienced professionals, contribute to real projects and grow through hands-on experience**.
 
 📍 **Portugal**
+
 🌍 **Open to remote and hybrid opportunities**
 
 ---
