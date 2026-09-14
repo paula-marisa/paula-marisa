@@ -44,7 +44,7 @@ I hold a **Bachelor's degree in Clinical Analysis and Public Health** and curren
 
 Since completing my Computer Engineering degree, I've continued developing my technical skills through **academic and personal projects, courses, bootcamps, a hackathon and technology conferences**. I've explored different areas of IT, with particular exposure to **software development, data engineering, data analysis and web development**, while also gaining experience with technologies such as **Python, Java, JavaScript, TypeScript, SQL, Angular, React, Node.js, and OutSystems**.
 
-I also hold the **OutSystems Associate Developer (ODC) certification**, reflecting my experience with the OutSystems development platform.
+I also hold the **OutSystems Associate Developer (ODC) certification**, reflecting my training and practical exposure to the OutSystems development platform.
 
 I'm now looking for my **first professional opportunity in IT**, particularly a **part-time or entry-level position** where I can contribute, learn from experienced teams and continue developing my technical skills.
 
