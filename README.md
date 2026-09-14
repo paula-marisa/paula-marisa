@@ -119,7 +119,7 @@ const paula = {
         "Academic Projects",
         "Personal Projects",
         "Courses & Bootcamps",
-        "Hackathons",
+        "Hackathon",
         "Technology Conferences"
     ],
 
