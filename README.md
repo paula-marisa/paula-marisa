@@ -38,13 +38,15 @@
 
 ##  ๋࣭ ⭑⚝ About Me
 
-Hi! I'm **Paula Rodrigues**, a **Computer Engineer from Portugal** with an academic and professional background in both **technology and biomedical sciences**.
+Hi! I'm **Paula Rodrigues**, a **Computer Engineer from Portugal** with an academic and professional background spanning **technology and biomedical sciences**.
 
-I hold a **Bachelor's degree in Clinical Analysis and Public Health** and currently work as a **Biomedical Scientist at a hospital in Portugal**. In 2024, I completed a second bachelor's degree in **Computer Engineering at ISEP – Instituto Superior de Engenharia do Porto**, driven by my interest in technology and my desire to build a career in IT.
+I hold a **Bachelor's degree in Clinical Analysis and Public Health** and currently work as a **Biomedical Scientist at a hospital in Portugal**. In 2024, I completed a second bachelor's degree in **Computer Engineering at ISEP – Instituto Superior de Engenharia do Porto**, driven by my interest in technology and my goal of building a career in IT.
 
-Since graduating in Computer Engineering, I've continued developing my technical skills through **courses, bootcamps, conferences, a hackathon and personal projects**. These experiences have helped me apply what I've learned and explore different areas of IT.
+Since completing my Computer Engineering degree, I've continued developing my technical skills through **academic and personal projects, courses, bootcamps, a hackathon and technology conferences**. I've explored different areas of IT, with particular exposure to **software development, data engineering, data analysis and web development**, while also gaining experience with technologies such as **Python, Java, JavaScript, TypeScript, SQL, Angular, React, Node.js, and OutSystems**.
 
-I'm now looking to **transition into IT** and gain my first professional experience in the field. I'm particularly interested in **internships, part-time positions and other entry-level opportunities** where I can learn, contribute and grow professionally.
+I also hold the **OutSystems Associate Developer (ODC) certification**, reflecting my experience with the OutSystems development platform.
+
+I'm now looking for my **first professional opportunity in IT**, particularly a **part-time or entry-level position** where I can contribute, learn from experienced teams and continue developing my technical skills.
 
 <img align="right" width="330" src="https://c.tenor.com/w3APLkMuTX0AAAAC/computer-work.gif" />
 
@@ -53,11 +55,10 @@ I'm now looking to **transition into IT** and gain my first professional experie
 - 👩🏻‍💻 **BSc in Computer Engineering** — ISEP, completed in 2024
 - 👩🏻‍💻 **BSc in Clinical Analysis and Public Health** — ESTSP, completed in 2014
 - 👩🏻‍💻 Currently working as a **Biomedical Scientist** at a hospital in Portugal
-- 👩🏻‍💻 Building **personal projects** to strengthen my IT skills
-- 👩🏻‍💻 Continuously learning through **courses and bootcamps**
-- 👩🏻‍💻 Participated in **a hackathon and technology conferences**
-- 👩🏻‍💻 Exploring **different areas of IT**
-- 👩🏻‍💻 Looking for my **first professional opportunity in IT**
+- 👩🏻‍💻 **OutSystems Associate Developer (ODC)** certification
+- 👩🏻‍💻 Built **academic and personal projects** across software, web and data
+- 👩🏻‍💻 Participated in **courses, bootcamps, a hackathon and technology conferences**
+- 👩🏻‍💻 Currently looking for my **first professional opportunity in IT**
 
 <br clear="right"/>
 
@@ -84,30 +85,22 @@ const paula = {
         "Cybersecurity"
     ],
 
-    programmingLanguages: [
+    technicalBackground: [
         "Java",
         "Python",
         "JavaScript",
         "TypeScript",
-        "R"
-    ],
-
-    dataAndQuery: [
+        "R",
         "SQL",
-        "Pandas",
-        "NumPy"
-    ],
-
-    webAndApplicationDevelopment: [
-        "HTML",
-        "CSS",
         "Angular",
         "React",
         "Node.js",
-        "Outsystems"
+        "OutSystems"
     ],
 
-    dataEngineering: [
+    dataAndEngineering: [
+        "Pandas",
+        "NumPy",
         "dbt",
         "Snowflake",
         "Databricks",
@@ -115,26 +108,23 @@ const paula = {
         "Google Cloud Storage"
     ],
 
-    databases: [
+    databasesAndTesting: [
         "MongoDB",
-        "PostgreSQL"
-    ],
-
-    testingAndTools: [
+        "PostgreSQL",
         "Pytest",
-        "Cypress",
-        "Docker",
-        "Git",
-        "GitHub",
-        "VS Code"
+        "Cypress"
     ],
 
     background: [
         "Academic Projects",
         "Personal Projects",
         "Courses & Bootcamps",
-        "Hackathon",
+        "Hackathons",
         "Technology Conferences"
+    ],
+
+    certifications: [
+        "OutSystems Associate Developer (ODC)"
     ],
 
     currentlyLearning: [
@@ -144,9 +134,9 @@ const paula = {
     ],
 
     lookingFor: [
-        "IT Internship",
-        "Part-time IT Opportunity",
-        "Entry-Level IT Opportunity"
+        "Part-time IT Opportunities",
+        "Entry-Level IT Opportunities",
+        "Internships"
     ],
 
     philosophy: "Build. Learn. Improve. Repeat. ✮"
@@ -179,10 +169,10 @@ const paula = {
   <code>SQL</code>
   <code>Pandas</code>
   <code>NumPy</code>
+  <code>Scikit-learn</code>
   <code>Matplotlib</code>
   <code>Plotly</code>
 </p>
-
 ---
 
 ### ✎ᝰ Data Engineering & Platforms
@@ -192,7 +182,7 @@ const paula = {
   <code>Snowflake</code>
   <code>Databricks</code>
   <code>Apache Airflow</code>
-  <code>Google Cloud Storage</code>  
+  <code>Google Cloud Storage</code>
 </p>
 
 ---
@@ -224,10 +214,10 @@ const paula = {
   <code>MongoDB</code>
   <code>PostgreSQL</code>
 </p>
-  
+
 ---
 
-### ✎ᝰ Testing, DevOps & Tools
+### ✎ᝰ Testing & Development Tools
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=docker,git,github&theme=light" />
@@ -297,7 +287,7 @@ An **end-to-end data engineering and analytics project** using public healthcare
 
 **Technologies**
 
-`Python` · `SQL` · `Snowflake` · `dbt` · `Databricks` · `Data Modeling` · `Git`
+`Python` · `SQL` · `Snowflake` · `dbt` · `Databricks` · `Git`
 
 ---
 
@@ -345,9 +335,6 @@ A university project exploring an interactive dashboard for a **Federated Learni
 
 - Interactive web interface
 - Frontend development
-- React
-- TypeScript
-- JavaScript
 - Integration between project components
 - Containerized development environment
 
@@ -376,28 +363,17 @@ A university project exploring an interactive dashboard for a **Federated Learni
 
 ##  ๋࣭ ⭑⚝ Open to Opportunities
 
-I'm currently looking for an opportunity to **transition into IT**, gain professional experience and contribute to real-world projects.
+I'm currently looking for my **first professional opportunity in IT**, with a particular interest in **part-time and entry-level positions** where I can contribute while continuing to develop my technical skills.
 
 ### Areas I'm interested in exploring
 
-👩🏻‍💻 **Software Development**
+**Software Development** · **Data Engineering & Data Analysis** · **Web Development**
 
-👩🏻‍💻 **Data Engineering & Data Analysis**
+I'm also open to opportunities involving **Software Testing & QA, Computer Networks, Cybersecurity and Cloud Technologies**, as I'm continuing to explore these areas.
 
-👩🏻‍💻 **Web Development**
-
-👩🏻‍💻 **Software Testing & QA**
-
-👩🏻‍💻 **Computer Networks**
-
-👩🏻‍💻 **Cybersecurity**
-
-👩🏻‍💻 **Cloud Technologies**
-
-I'm particularly interested in **internships, part-time opportunities and entry-level positions**.
+I'm especially interested in teams where I can **learn from experienced professionals, contribute to real projects and grow through hands-on experience**.
 
 📍 **Portugal**
-
 🌍 **Open to remote and hybrid opportunities**
 
 ---
