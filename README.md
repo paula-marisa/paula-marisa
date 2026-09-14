@@ -28,6 +28,14 @@
 
 ---
 
+<p align="center">
+
+`01000010 01110101 01101001 01101100 01100100 00101110  01001100 01100101 01100001 01110010 01101110 00101110  01000101 01111000 01110000 01101100 01101111 01110010 01100101 00101110`
+
+</p>
+
+---
+
 ##  ๋࣭ ⭑⚝ About Me
 
 Hi! I'm **Paula Rodrigues**, a **Computer Engineer from Portugal** with an academic and professional background in both **technology and biomedical sciences**.
@@ -81,49 +89,58 @@ const paula = {
         "Python",
         "JavaScript",
         "TypeScript",
-        "R",
-        "Assembly",
-        "Dart"
+        "R"
     ],
 
-    queryLanguages: [
-        "SQL"
+    dataAndQuery: [
+        "SQL",
+        "Pandas",
+        "NumPy"
     ],
 
-    frameworksAndLibraries: {
-        frameworks: [
-            "Angular"
-        ],
+    webAndApplicationDevelopment: [
+        "HTML",
+        "CSS",
+        "Angular",
+        "React",
+        "Node.js",
+        "Outsystems"
+    ],
 
-        libraries: [
-            "React",
-            "Pandas",
-            "NumPy"
-        ]
-    },
-
-    platformsAndTools: [
-        "OutSystems",
+    dataEngineering: [
         "dbt",
         "Snowflake",
         "Databricks",
         "Apache Airflow",
-        "Docker",
+        "Google Cloud Storage"
+    ],
+
+    databases: [
+        "MongoDB",
+        "PostgreSQL"
+    ],
+
+    testingAndTools: [
         "Pytest",
         "Cypress",
+        "Docker",
         "Git",
-        "GitHub"
+        "GitHub",
+        "VS Code"
     ],
 
     background: [
         "Academic Projects",
         "Personal Projects",
         "Courses & Bootcamps",
-        "Hackathons"
+        "Hackathon",
+        "Technology Conferences"
     ],
 
     currentlyLearning: [
-        "Python"
+        "Python",
+        "Software Development",
+        "Data Technologies"
     ],
 
     lookingFor: [
@@ -143,7 +160,7 @@ const paula = {
 ### ✎ᝰ Programming Languages
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=java,python,js,ts,dart&theme=light" />
+  <img src="https://skillicons.dev/icons?i=java,python,js,ts,r&theme=light" />
 </p>
 
 <p align="center">
@@ -151,23 +168,31 @@ const paula = {
   <code>Python</code>
   <code>JavaScript</code>
   <code>TypeScript</code>
-  <code>Dart</code>
   <code>R</code>
-  <code>Assembly</code>
 </p>
 
 ---
 
-### ✎ᝰ Data & Databases
+### ✎ᝰ Data & Analytics
 
 <p align="center">
   <code>SQL</code>
   <code>Pandas</code>
   <code>NumPy</code>
+  <code>Matplotlib</code>
+  <code>Plotly</code>
+</p>
+
+---
+
+### ✎ᝰ Data Engineering & Platforms
+
+<p align="center">
   <code>dbt</code>
   <code>Snowflake</code>
   <code>Databricks</code>
   <code>Apache Airflow</code>
+  <code>Google Cloud Storage</code>  
 </p>
 
 ---
@@ -175,41 +200,48 @@ const paula = {
 ### ✎ᝰ Web & Application Development
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=angular,react,html,css&theme=light" />
+  <img src="https://skillicons.dev/icons?i=html,css,angular,react,nodejs&theme=light" />
 </p>
 
 <p align="center">
-  <code>Angular</code>
-  <code>React</code>
   <code>HTML</code>
   <code>CSS</code>
+  <code>Angular</code>
+  <code>React</code>
+  <code>Node.js</code>
   <code>OutSystems</code>
 </p>
 
 ---
 
-### ✎ᝰ Testing
+### ✎ᝰ Databases & Backend
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=mongodb,postgres&theme=light" />
+</p>
+
+<p align="center">
+  <code>MongoDB</code>
+  <code>PostgreSQL</code>
+</p>
+  
+---
+
+### ✎ᝰ Testing, DevOps & Tools
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=docker,git,github&theme=light" />
+</p>
 
 <p align="center">
   <code>Pytest</code>
   <code>Cypress</code>
-</p>
-
----
-
-### ✎ᝰ Cloud & Tools
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=gcp,docker,git,github,vscode&theme=light" />
-</p>
-
-<p align="center">
-  <code>Google Cloud Storage</code>
   <code>Docker</code>
   <code>Git</code>
   <code>GitHub</code>
-  <code>VS Code</code>
 </p>
+
+I've also worked with additional technologies across academic and personal projects, which you can explore in the project repositories below.
 
 ---
 
@@ -277,7 +309,7 @@ An **end-to-end data engineering and analytics project** using public healthcare
 
 A **team-based software engineering project** developed during my Computer Engineering degree, focused on managing a fleet of robots and drones.
 
-The project explores business questions through **data preparation, exploratory analysis, modelling and visualization**.
+The project provided experience across **web application development, backend services, database integration, testing and software delivery practices**.
 
 **Technologies**
 
@@ -293,7 +325,7 @@ The project explores business questions through **data preparation, exploratory 
 
 A data analysis project based on the **Olist Brazilian E-commerce dataset**, developed as part of a technical challenge focused on Data Engineering and DataOps.
 
-The project explores business questions through **data preparation, exploratory analysis, data analysis, modelling and visualization**.
+The project explores business questions through **data preparation, exploratory analysis, modelling and visualization**.
 
 **Technologies**
 
@@ -327,7 +359,7 @@ A university project exploring an interactive dashboard for a **Federated Learni
 
 ## ◡̈ Other Projects
 
-<img align="right" width="200" src="https://github.com/paula-marisa/paula-marisa/blob/main/pngwing.com.png">
+<img align="right" width="200" src="https://raw.githubusercontent.com/paula-marisa/paula-marisa/main/pngwing.com.png">
 
 | Project | Description |
 |:---|:---|
@@ -400,7 +432,7 @@ I'm always happy to connect with people interested in **technology, software, da
 
 ### ✦ Thanks for visiting my profile ✦
 
-**Learning, building and growing — one project at a time.**
+**Keep learning. Keep building. Keep exploring.**
 
 <br>
 
